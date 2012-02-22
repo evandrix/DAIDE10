@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="TournamentMan">
+</Property><Property Name="Solution File" Value="E:\Applications\DAIDE\TournamentMan\sdk\src\TournamentMan.sln">
+</Property><Property Name="Date" Value="28 January 2010">
+</Property><Property Name="Time" Value="15:54">
+</Property></Properties><Event ErrorLevel="0" Project="Polarsoft.Diplomacy" Source="Polarsoft.Diplomacy\Polarsoft.Diplomacy.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Polarsoft.Diplomacy" Source="Polarsoft.Diplomacy\Polarsoft.Diplomacy.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Polarsoft.Diplomacy.Daide" Source="Polarsoft.Diplomacy.Daide\Polarsoft.Diplomacy.Daide.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Polarsoft.Diplomacy.Daide" Source="Polarsoft.Diplomacy.Daide\Polarsoft.Diplomacy.Daide.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HeadlessHoldBot" Source="examples\HeadlessHoldBot\HeadlessHoldBot.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HeadlessHoldBot" Source="examples\HeadlessHoldBot\HeadlessHoldBot.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ConsBot" Source="examples\ConsBot\ConsBot.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ConsBot" Source="examples\ConsBot\ConsBot.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HoldBot" Source="examples\HoldBot\HoldBot.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="HoldBot" Source="examples\HoldBot\HoldBot.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Polarsoft.Utilities" Source="Polarsoft.Utilities\Polarsoft.Utilities.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Polarsoft.Utilities" Source="Polarsoft.Utilities\Polarsoft.Utilities.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="TournamentMan.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="TournamentMan.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Polarsoft.Diplomacy" Source="Polarsoft.Diplomacy\Polarsoft.Diplomacy.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Polarsoft.Diplomacy.Daide" Source="Polarsoft.Diplomacy.Daide\Polarsoft.Diplomacy.Daide.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="HeadlessHoldBot" Source="examples\HeadlessHoldBot\HeadlessHoldBot.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ConsBot" Source="examples\ConsBot\ConsBot.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="HoldBot" Source="examples\HoldBot\HoldBot.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="Polarsoft.Utilities" Source="Polarsoft.Utilities\Polarsoft.Utilities.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

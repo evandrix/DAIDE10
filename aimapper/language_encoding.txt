@@ -1,0 +1,307 @@
+00 -1 NME [sub01] [sub01] # #
+00 -1 OBS # #
+00 -1 IAM [sub3C] [sub02] # #
+00 -1 MAP # #
+00 -1 MDF # #
+00 -1 YES [sub31] # #
+00 -1 REJ [sub31] # #
+00 0 HLO # #
+00 -1 NOW # #
+00 -1 SCO # #
+00 -1 HST [sub12] # #
+00 -1 HST # #
+00 0 SUB [repeat] [sub17] # #
+00 0 NOT [sub1A] # #
+00 0 MIS # #
+00 0 GOF # #
+00 0 ORD # #
+00 -1 TME [sub02] # #
+00 -1 TME # #
+00 0 DRW # #
+00 10 DRW [sub04] # #
+00 10 SND [sub02] [sub04] [sub1E] # #
+00 -1 ADM [sub01] [sub01] # #
+
+01 -1 [string] # #
+
+02 -1 [token3F] # #
+
+04 0 [repeat] [token3C] # $0{ and $R} #
+
+05 0 [sub07] [sub08] # #
+
+06 0 [repeat] [sub0B] # #
+
+07 0 [repeat] [sub09] # #
+
+08 0 [repeat] [token3D] # $0{ and $R} #
+
+09 0 [token3C] [repeat] [token3D] # #
+09 0 UNO [repeat] [token3D] # #
+09 0 [sub04] [repeat] [token3D] # #
+
+0B 0 [token3D] [repeat] [sub0C] # #
+
+0C 0 [token35] [repeat] [token3E] # #
+0C 0 [sub0D] [repeat] [token3E] # #
+
+0D 0 FLT [token37] # #
+
+10 0 [repeat] [sub11] # #
+
+11 0 LVL [token3F] # #
+11 0 MTL [token3F] # #
+11 0 RTL [token3F] # #
+11 0 BTL [token3F] # #
+11 0 AOA # #
+11 10 PDA # #
+11 10 PTL [token3F] # #
+11 10 NPR # #
+11 10 NPB # #
+
+12 -1 [token2A] [token3F] # $0 $1 #
+
+13 0 [token3C] [token35] [token3D] # #
+13 0 [token3C] [token35] [token3E] # #
+13 0 [token3C] [token35] [token3D] MRT [sub15] # #
+13 0 [token3C] [token35] [token3E] MRT [sub15] # #
+
+15 0 [repeat] [token3E] # #
+
+16 0 [token3C] [repeat] [token3D] # $0 owns $1{ and $R} #
+
+17 0 [sub18] HLD # $0 Hold # Hold
+17 0 [sub18] MTO [token3E] # $0 -> $1 # Move
+17 0 [sub18] SUP [sub18] # $0 s $1 # Support to Hold
+17 0 [sub18] SUP [sub18] MTO [token3D] # $0 s $1 -> $2 # Support to Move
+17 0 [sub18] CVY [sub18] CTO [token3D] # $0 c $1 -> $2 # Convoy
+17 0 [sub18] CTO [token3D] VIA [sub08] # $0 -> $1 via $2 # Move by Convoy
+17 0 [sub18] RTO [token3E] # $0 -> $1 # Retreat
+17 0 [sub18] DSB # $0 Disband # Disband
+17 0 [sub18] BLD # Build $0 # Build
+17 0 [sub18] REM # Remove $0 # Remove
+17 0 [token3C] WVE # $0 Waives Build # Waive
+
+18 0 [token3C] [token35] [token3E] # $0's $1 $2 #
+
+19 0 MBV # #
+19 0 FAR # #
+19 0 NSP # #
+19 0 NST # #
+19 0 NSU # #
+19 0 NAS # #
+19 0 NSF # #
+19 0 NSA # #
+19 0 NYU # #
+19 0 NRN # #
+19 0 YSC # #
+19 0 ESC # #
+19 0 HSC # #
+19 0 NSC # #
+19 0 CST # #
+19 0 NMB # #
+19 0 NMR # #
+19 0 NRS # #
+19 0 BPR # #
+
+1A 0 SUB [sub17] # #
+1A 0 SUB # #
+1A 0 GOF # #
+1A 0 DRW # #
+1A 10 DRW [sub04] # #
+
+1B 0 SUC # #
+1B 0 BNC # #
+1B 0 CUT # #
+1B 0 DSR # #
+1B 0 FLD # #
+1B 0 NSO # #
+
+1C 0 [token19] # #
+1C 0 [token1B] # #
+1C 0 [token19] RET # #
+1C 0 [token1B] RET # #
+
+1D 10 SND [sub04] [sub1E] # #
+
+1E 10 PRP [sub23] # I propose $0 # I propose
+1E 10 CCL [sub1E] # Cancel message: '$0' # Cancel press
+1E 10 FCT [sub23] # I know that $0 # I know
+1E 60 INS [sub1F] # I insist that $0 # I insist
+1E 60 QRY [sub1F] # Do you think that $0 # Do you think
+1E 60 SUG [sub1F] # I suggest $0 # I suggest
+1E 60 THK [sub1F] # I think that $0 # I think
+1E 70 WHT [sub18] # What should we do with $0 # What should
+1E 70 HOW [sub34] # How should we attack $0 # How should
+1E 80 EXP [sub12] [sub33] # Explain your orders for $0 given that you said $1 # Explain
+1E 100 IFF [sub1F] THN [sub1E] # If $0 then $1 # If then
+1E 100 IFF [sub1F] THN [sub1E] ELS [sub1E] # If $0 then $1 else $2 # If then else
+1E 120 FRM [sub3C] [sub04] [sub33] # The following message was sent from $0 to $1: "$2" # Forward Press
+
+1F 10 PCE [sub04] # peace between $0 # Peace
+1F 10 ALY [sub04] VSS [sub04] # an alliance between $0 against $1 # Alliance
+1F 10 DRW # a draw # Draw
+1F 10 SLO [sub3C] # a solo to $0 # Solo
+1F 10 NOT [sub1F] # not $0 # Not
+1F 10 AOA LVL [sub1F] # a free choice regarding $0 # Free choice
+1F 20 XDO [sub17] # ordering $0 # Order
+1F 20 DMZ [sub04] [sub08] # a DMZ for $0 in $1 # DMZ
+1F 40 SCD [repeat] [sub16] # the supply centres are shared $0{, $R} # Share SCs
+1F 40 OCC [repeat] [sub18] # unit as follows: $0{ and $R} # Unit locations
+1F 50 AND [repeat] [sub1F] # All of $0{ and $R} # All of
+1F 50 ORR [repeat] [sub1F] # One of $0{ or $R} # One of
+1F 90 FOR [sub12] [sub1F] # In $0 $1 # In a future turn
+1F 90 FOR [sub27] [sub1F] # In $0 $1 # In the future
+1F 110 XOY [sub3C] [sub3C] # $0 owes $1 # X owes Y
+1F 110 YDO [sub3C] [repeat] [sub18] # $0 orders $1{, $R} # Hand over units
+1F 120 SND [sub3C] [sub04] [sub33] # $0 sends to $1 "$2" # Send press
+1F 120 FWD [sub04] [sub3C] [sub3C] # Press from $0 to $1 is forwarded to $2 # Forward press received
+1F 120 BCC [sub3C] [sub04] [sub3C] # Press from $0 to $1 is copied to $2 # Copy press sent
+
+20 10 # #
+20 10 [repeat] [token21] # #
+
+21 10 PRP # #
+21 10 PCE # #
+21 10 ALY # #
+21 10 VSS # #
+21 10 DRW # #
+21 10 SLO # #
+21 10 NOT # #
+21 10 YES # #
+21 10 REJ # #
+21 10 BWX # #
+21 999 XDO # #
+21 999 DMZ # #
+21 999 AND # #
+21 999 ORR # #
+21 999 SCD # #
+21 999 OCC # #
+21 999 INS # #
+21 999 QRY # #
+21 999 THK # #
+21 999 FCT # #
+21 999 IDK # #
+21 999 SUG # #
+21 999 WHT # #
+21 999 HOW # #
+21 999 EXP # #
+21 999 SRY # #
+21 999 FOR # #
+21 999 IFF # #
+21 999 THN # #
+21 999 ELS # #
+21 999 IOU # #
+21 999 UOM # #
+21 999 XOY # #
+21 999 YDO # #
+21 999 FRM # #
+21 999 FWD # #
+21 999 SND # #
+
+23 10 PCE [sub04] # peace between $0 # Peace
+23 10 ALY [sub04] VSS [sub04] # an alliance between $0 against $1 # Alliance
+23 10 DRW # a draw # Draw
+23 10 SLO [sub3C] # a solo to $0 # Solo
+23 10 NOT [sub1F] # not $0 # Not
+23 10 NAR [sub1F] # a free choice regarding $0 # Free choice
+23 20 XDO [sub17] # ordering $0 # Order
+23 20 DMZ [sub04] [sub08] # a DMZ for $0 in $1 # DMZ
+23 30 AND [repeat] [sub1F] # All of $0{ and $R} # All of
+23 30 ORR [repeat] [sub1F] # One of $0{ or $R} # One of
+23 40 SCD [repeat] [sub16] # the supply centres are shared $0{, $R} # Share SCs
+23 40 OCC [repeat] [sub18] # unit as follows: $0{ and $R} # Unit locations
+23 90 FOR [sub12] [sub1F] # In $0 $1 # In a future turn
+23 90 FOR [sub27] [sub1F] # $0 $1 # In the future
+23 110 XOY [sub3C] [sub3C] # $0 owes $1 # X owes Y
+23 110 YDO [sub3C] [repeat] [sub18] # $0 orders $1{, $R}# Hand over units
+23 120 SND [sub3C] [sub04] [sub33] # $0 sends to $1 "$2" # Send press
+23 120 FWD [sub04] [sub3C] [sub3C] # Press from $0 to $1 is forwarded to $2 # Forward press received
+23 120 BCC [sub3C] [sub04] [sub3C] # Press from $0 to $1 is copied to $2 # Copy press sent
+
+24 60 NOT [sub25] # $0 #
+
+25 60 QRY [sub1F] # Do you think that $0 #
+
+26 80 EXP [sub12] [sub33] # Explain your orders for $0 given that you said $1 #
+
+27 90 [sub12] [sub12] # From $0 to $1 # 
+
+29 130 THK [sub1F] # I think $0 #
+29 130 FCT [sub1F] # It is true that $0 #
+
+2A 0 SPR # Spring # Spring
+2A 0 SUM # Spring Retreats # Spring Retreats
+2A 0 FAL # Fall # Fall
+2A 0 AUT # Fall Retreats # Fall Retreats
+2A 0 WIN # Adjustments # Adjustments
+
+2E 10 YES [sub1E] # Yes. You said '$0' # 
+2E 10 REJ [sub1E] # No. You said '$0'#
+2E 10 BWX [sub1E] # Not telling you. You said '$0' #
+2E 60 IDK [sub25] # I don't know. You said '$0' #
+2E 60 THK [sub25] # I think so. You said '$0' #
+2E 60 FCT [sub25] # That's true. You said '$0' #
+2E 60 THK [sub24] # I think not. You said '$0' #
+2E 60 FCT [sub24] # That's not true. You said '$0' #
+2E 80 YES [sub26] # Yes. You said '$0' #
+2E 80 REJ [sub26] # No. You said '$0' #
+2E 80 SRY [sub26] # Sorry. You said '$0' #
+2E 80 IDK [sub26] # I don't know. You said '$0' #
+2E 130 WHY [sub29] # Why? You said '$0' #
+2E 130 POB [sub2A] # See the board position. You said '$0' #
+2E 130 WHY [sub2F] # Why? You said '$0' #
+2E 130 IDK [sub2F] # I don't know. You said '$0' #
+
+2F 130 PRP [sub1F] # I propose $0 # I propose
+2F 130 INS [sub1F] # I insist that $0 # I insist
+2F 130 SUG [sub1F] # I suggest $0 # I suggest
+
+30 130 WHY [sub29] # #
+
+31 -1 MAP [sub01] # #
+31 -1 SVE [sub01] # #
+
+32 -1 [token3C] [token3F] # #
+
+33 10 PRP [sub23] # I propose $0 # I propose
+33 10 CCL [sub1E] # Cancel message: '$0' # Cancel press
+33 10 FCT [sub23] # I know that $0 # I know
+33 10 YES [sub1E] # Yes. You said '$0' # 
+33 10 REJ [sub1E] # No. You said '$0'#
+33 10 BWX [sub1E] # Not telling you. You said '$0' #
+33 60 INS [sub1F] # I insist that $0 # I insist
+33 60 QRY [sub1F] # Do you think that $0 # Do you think
+33 60 SUG [sub1F] # I suggest $0 # I suggest
+33 60 THK [sub1F] # I think that $0 # I think
+33 60 IDK [sub25] # I don't know. You said '$0' #
+33 60 THK [sub25] # I think so. You said '$0' #
+33 60 FCT [sub25] # That's true. You said '$0' #
+33 60 THK [sub24] # I think not. You said '$0' #
+33 60 FCT [sub24] # That's not true. You said '$0' #
+33 70 WHT [sub18] # What should we do with $0 # What should
+33 70 HOW [sub34] # How should we attack $0 # How should
+33 80 EXP [sub12] [sub33] # Explain your orders for $0 given that you said $1 # Explain
+33 80 YES [sub26] # Yes. You said '$0' #
+33 80 REJ [sub26] # No. You said '$0' #
+33 80 SRY [sub26] # Sorry. You said '$0' #
+33 80 IDK [sub26] # I don't know. You said '$0' #
+33 100 IFF [sub1F] THN [sub1E] # If $0 then $1 # If then
+33 100 IFF [sub1F] THN [sub1E] ELS [sub1E] # If $0 then $1 else $2 # If then else
+33 120 FRM [sub3C] [sub04] [sub33] # The following message was sent from $0 to $1: "$2" # Forward Press
+33 130 WHY [sub29] # Why? You said '$0' #
+33 130 POB [sub2A] # See the board position. You said '$0' #
+33 130 WHY [sub2F] # Why? You said '$0' #
+33 130 IDK [sub2F] # I don't know. You said '$0' #
+
+34 0 [token3C] # $0 # A power
+34 0 [token3E] # $0 # A province
+
+35 0 AMY # Army # Army
+35 0 FLT # Fleet # Fleet
+
+37 0 NCS # North Coast # North Coast
+37 0 ECS # East Coast # East Coast
+37 0 SCS # South Coast # South Coast
+37 0 WCS # West Coast # West Coast
+

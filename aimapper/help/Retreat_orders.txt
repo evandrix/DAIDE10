@@ -1,0 +1,12 @@
+How To Enter Retreat Orders
+
+All orders are entered by clicking on the map. To start, click on the unit
+you want to order. Then enter the order...
+
+- To enter a Disband order, click on the unit again.
+- To enter a Retreat order, click on the retreat destination.
+
+When you are done, hit the Submit Button to send your orders to the Server.
+
+Note that if you have a retreat that must be disbanded, you must still 
+order the disband. Forced disbands are not automatically ordered for you.

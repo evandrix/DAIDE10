@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: jac-0.5.jar
+Created-By: 1.4.2_01 (Sun Microsystems Inc.)
+Main-Class: dip.DiploBot
+

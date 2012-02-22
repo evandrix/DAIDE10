@@ -1,0 +1,57 @@
+Man'chi Diplomacy AI -- HISTORY
+Copyright 2002-2003 Brian Roberts (brian@mirror.org)
+
+Version 7: August 4/2003
+Improvements in tactical move generation.  Scoring is now done based
+on all tentative moves, so it understands concepts like moving into a
+province from which another unit is moving out.  More understanding on 
+cutting support, but incomplete.  No strategic improvements.
+
+Version 6: June 28/2003
+Redesign of much of the tactical move generation and evaluation, 
+for a much clearer understanding of "why" behind each move.  Still 
+considers moves mostly one a time, without looking at the big picture.
+Play has improved but still suffers from many problems.  The most
+interesting part is a framework for automatically running tactical
+situation tests and comparing generated against expected orders.
+A single test can be opened in the application, or all tests can be 
+run at once (via tactest).
+
+Version 5: April 11/2003
+Created several robots, mainly for play with the DAIDE server.  These
+just connect existing pieces from the previous version (and thus the
+same problems exist).  But its interesting to watch the robots play.
+
+Version 4: April 4/2003
+The first release that could actually do something useful!  The move
+generation mostly works, but often results in poor moves.  There are a
+large number of issues related to the choosing, rating and comparison 
+of goals.  It can also play against the DAIDE server.  Note that this 
+version doesn't appear that exciting at first glance: a lot of move 
+analysis is done (and displayed) but later ignored.
+
+Version 3: Jan 7/2003
+Through 2002 I worked on various bits of the program, mainly cleaning
+up existing old stuff into a (mostly) working program.  Man'chi still
+couldn't play at game, but at least most of the pieces for loading and
+analyzing a game fit together.  This was the first real public release.
+
+Version 2: Apr 26/2002
+The "Geography is Destiny" article by Paul Windsor seemed an excellent
+beginning for a strategic analysis to me.  Version 2 included this 
+analysis and enough pieces to display it, but nothing else.  It was 
+distributed to a few interested people only.  The name Man'chi was 
+chosen at this time.  It is a fictitious word from an oddly appropriate 
+book I was reading -- see the quote on the About dialog.
+
+Version 1:
+I re-discovered Diplomacy about the same time I was learning Java, and
+used development of a Diplomacy display & mapping program as an excuse
+and exercise to experiment with Java.  Over a couple of years the code
+grew in various bits and pieces, often unrelated to one another.  I
+never really got anything finished nor intended to show the code to 
+anybody else.  In early 2002 I decided developing a Diplomacy AI was
+a fascinating challenge and arbitrarily declared my half finished
+pieces as the "first" version.  It was never released.
+
+

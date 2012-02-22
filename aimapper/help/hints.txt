@@ -1,0 +1,11 @@
+Hints and Tips
+
+Most of the DAIDE interface is pretty obvious. However, there are one or
+two features that you may not find by accident.
+
+- By default, the Data Pane will switch to the Incoming Press tab if a message
+  is received. However, if you right-click a tab, it will lock the selection,
+  and if a message is received, the Incoming Press tab will just flash until
+  you select it (or right-click again to unlock). A locked tab appears 
+  highlighted.
+

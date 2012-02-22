@@ -1,0 +1,28 @@
+How To Enter Movement Orders
+
+All orders are entered by clicking on the map. To start, click on the unit
+you want to order. Then enter the order...
+
+- To enter a Hold order, click on the unit again.
+- To enter a Move order, click on the destination.
+- To enter a Support order, right-click on the unit to support.
+- To enter a Move By Convoy order, click on the sea provinces the army moves
+through. Then finally click on the destination.
+
+That's it, it's that simple... except there are two things missing...
+
+When supporting a unit, if you have ordered the supported unit to move, then
+the support will be for it to move. If the supported unit has not been 
+ordered to move, then the support will be to hold. In other words, if you
+want to support a unit to move, then enter the move order first.
+
+Convoy orders do not need to be entered at all ! When you order an army to
+move by convoy, all the fleets it passes through are automatically ordered
+to convoy it.
+
+And finally, to support or convoy foreign units, order the foreign unit as
+if it was your own. The order will appear in brackets to indicate it is a
+foreign order, and the order won't actually affect that unit. But it does
+allow you to support or convoy the foreign unit in its action.
+
+When you are done, hit the Submit Button to send your orders to the Server.

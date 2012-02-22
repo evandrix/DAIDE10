@@ -1,0 +1,1610 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Polarsoft.Diplomacy.Daide</name>
+    </assembly>
+    <members>
+        <member name="T:Polarsoft.Diplomacy.Daide.DiplomaticMessageEventArgs">
+            <summary>Provides data for the <see cref="E:Polarsoft.Diplomacy.Daide.Connection.DiplomaticMessageReceived"/> event.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.DiplomaticMessageEventArgs.#ctor(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Constructor for the DiplomaticMessageEventArgs
+            </summary>
+            <param name="message">The recieved message.</param>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.DiplomaticMessageEventArgs.Message">
+            <summary>The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> that was received.
+            </summary>
+            <value>The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> that was received.</value>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Exception_UnknownOrderType">
+            <summary>
+              Looks up a localized string similar to Unknown OrderType: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_HUHMessage">
+            <summary>
+              Looks up a localized string similar to HUH message received: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_InvalidOrderNotReplaced">
+            <summary>
+              Looks up a localized string similar to Invalid order &apos;{0}&apos;. No replacement sent..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_InvalidOrderReplaced">
+            <summary>
+              Looks up a localized string similar to Invalid order &apos;{0}&apos; replaced with &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_MessageRejected">
+            <summary>
+              Looks up a localized string similar to Message rejected: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_PRNMessage">
+            <summary>
+              Looks up a localized string similar to PRN Message received: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_UnexpectedFirstToken">
+            <summary>
+              Looks up a localized string similar to Unexpected first token in message: &apos;{0}&apos;.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Basebot_Trace_UnexpectedMessage">
+            <summary>
+              Looks up a localized string similar to Unexpected {0} message: &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.BaseBot_Trace_UnknownFirstToken">
+            <summary>
+              Looks up a localized string similar to Unknown first token. Bytes: {0}, {1}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_01">
+            <summary>
+              Looks up a localized string similar to IM timer popped..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_02">
+            <summary>
+              Looks up a localized string similar to IM was not the first message sent by the client..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_03">
+            <summary>
+              Looks up a localized string similar to IM indicated the wrong endian..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_04">
+            <summary>
+              Looks up a localized string similar to IM had an incorrect magic number..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_05">
+            <summary>
+              Looks up a localized string similar to Version incompatibility..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_06">
+            <summary>
+              Looks up a localized string similar to More than 1 IM sent..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_07">
+            <summary>
+              Looks up a localized string similar to IM sent by server..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_08">
+            <summary>
+              Looks up a localized string similar to Unknown message received..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_09">
+            <summary>
+              Looks up a localized string similar to Message shorter than expected..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_0A">
+            <summary>
+              Looks up a localized string similar to DM sent before RM..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_0B">
+            <summary>
+              Looks up a localized string similar to RM was not the first message sent by the server..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_0C">
+            <summary>
+              Looks up a localized string similar to More than 1 RM sent..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_0D">
+            <summary>
+              Looks up a localized string similar to RM sent by client..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_0E">
+            <summary>
+              Looks up a localized string similar to Invalid token in DM..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_ErrorMessage_Unknown">
+            <summary>
+              Looks up a localized string similar to Unknown error code: {0}, {1}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Exception_UnknownRMToken">
+            <summary>
+              Looks up a localized string similar to Unknown type of token for an RM: {0}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_DefaultPowers">
+            <summary>
+              Looks up a localized string similar to Adding default powers and provinces..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_ErrorMessage">
+            <summary>
+              Looks up a localized string similar to Error message received from server: {0}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_FinalMessage">
+            <summary>
+              Looks up a localized string similar to Final message received from server: {0}, {1}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_MessageReceived">
+            <summary>
+              Looks up a localized string similar to Receiving message: {0}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_Power">
+            <summary>
+              Looks up a localized string similar to Power: {0}..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_Powers">
+            <summary>
+              Looks up a localized string similar to Powers..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_PowersFromRM">
+            <summary>
+              Looks up a localized string similar to Adding powers and provinces from RM..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_Province">
+            <summary>
+              Looks up a localized string similar to Province: {0} (Type: {1})..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_Provinces">
+            <summary>
+              Looks up a localized string similar to Provinces..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connection_Trace_SendMessage">
+            <summary>
+              Looks up a localized string similar to Sending message: {0}.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Connector_Trace_Province">
+            <summary>
+              Looks up a localized string similar to Province: {0} (Type: {1}).
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Token_Exception_CannotAddBrackets">
+            <summary>
+              Looks up a localized string similar to You cannot add brackets yourself. Use MessageEnclosed or operator &apos;&amp;&apos; instead..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Token_Exception_NotANumber">
+            <summary>
+              Looks up a localized string similar to Token is not a number..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.TokenMessage_Exception_CannotAddBrackets">
+            <summary>
+              Looks up a localized string similar to You cannot add brackets yourself. Use MessageEnclosed or operator &apos;&amp;&apos; instead..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.TokenMessage_Exception_ParenthesisMismatch">
+            <summary>
+              Looks up a localized string similar to Invalid token array (Mismatch in parenthesis)..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Util_Exception_UnknownPhase">
+            <summary>
+              Looks up a localized string similar to Unknown phase token: &apos;{0}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Util_Trace_NewAdjacency">
+            <summary>
+              Looks up a localized string similar to Adjacency From: &apos;{0}&apos; to &apos;{1}&apos;..
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Properties.ErrorMessages.Util_UnknownCoast">
+            <summary>
+              Looks up a localized string similar to Unknown coast type..
+            </summary>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.FinishingCause">
+            <summary>The cause for the end of the game.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.FinishingCause.None">
+            <summary>The game hasn't ended yet.</summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.FinishingCause.Off">
+            <summary>An OFF command was sent.</summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.FinishingCause.Solo">
+            <summary>Someone won solo.</summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.FinishingCause.Draw">
+            <summary>The game was a draw.</summary>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.BaseBot">
+            <summary>A class that can be used to derive AIs from.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.#ctor">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.BaseBot"/> instance.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.Connect(System.String,System.Int32,System.String)">
+            <summary>Connects to a DAIDE server running at the specified location.
+            This overloaded version will get the version parameter from the current assembly version.
+            </summary>
+            <param name="hostName">The name of the server. This can either be an IP number or a server name.</param>
+            <param name="port">The port to connect to.</param>
+            <param name="name">The name of the bot.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.Connect(System.String,System.Int32,System.String,System.String)">
+            <summary>Connects to a DAIDE server running at the specified location.
+            </summary>
+            <param name="hostName">The name of the server. This can either be an IP number or a server name.</param>
+            <param name="port">The port to connect to.</param>
+            <param name="name">The name of the bot.</param>
+            <param name="version">The version of the bot.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.Send(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Sends the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> to the server.
+            </summary>
+            <param name="msg">The message to send.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.SubmitOrders">
+            <summary>Submits the <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.CurrentOrders"/> to the server.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.BeforeNewTurn">
+            <summary>Occurs before any processing starts for a new turn.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessCCD(Polarsoft.Diplomacy.Daide.TokenMessage,System.Boolean)">
+            <summary>Processes a CCD message (County in Civil Disorder).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The CCD message</param>
+            <param name="isNewDisconnection">Set to true if the notification is a new country in civil disorder.
+            <see cref="F:Polarsoft.Diplomacy.Daide.BaseBot.powersInCivilDisorder"/></param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessDRW(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a DRW message (a Draw has been declared by the server).
+            The default version sets <see cref="F:Polarsoft.Diplomacy.Daide.BaseBot.finishingCause"/> to <see cref="F:Polarsoft.Diplomacy.Daide.FinishingCause.Draw"/>.
+            </summary>
+            <param name="msg">The DRW message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessFRM(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a FRM message (press from another <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Power"/>).
+            The default version responds with a HUH message, followed with a TRY message that is empty.
+            </summary>
+            <param name="msg">The FRM message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessHUH(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a HUH message (a previously sent message has a syntax error).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The HUH message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessLOD(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a LOD message (Load a previously saved game).
+            The default version responds by rejecting the message.
+            </summary>
+            <param name="msg">The LOD message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessMIS(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a MIS message (The server is missing some orders).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The MIS message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessOFF(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an OFF message (Turn off).
+            The default version sets the <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.EndOfGameCause"/> to <see cref="F:Polarsoft.Diplomacy.Daide.FinishingCause.Off"/>.
+            </summary>
+            <param name="msg">The OFF message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessOUT(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an OUT message (The indicated country has been eliminated from the game).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The OUT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessPRN(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a PRN message (The message does not have a correct set of parentheses).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The PRN message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessSLO(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a SLO message (Someone has won solo).
+            The default version set the <see cref="F:Polarsoft.Diplomacy.Daide.BaseBot.finishingCause"/> to <see cref="F:Polarsoft.Diplomacy.Daide.FinishingCause.Solo"/>.
+            </summary>
+            <param name="msg">The SLO message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessSMR(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a SMR message (Participants in the game).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The SMR message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessSVE(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a SVE message (Save the game).
+            The default version does responds with a YES message (but does not save the game).
+            </summary>
+            <param name="msg">The SVE message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessTHX(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a THX message (Thanks for an order).
+            The default version sends the message to the log if the message indicated an error.
+            If possible, it also sends a replacement order.
+            </summary>
+            <param name="msg">The THX message.</param>
+            <remarks>
+            The action that is taken depends on the note that is returned from the server, as follows:
+            MBV - no action taken, the order is correct as it stands.
+            NYU - message is logged.
+            NRS - message is logged.
+            HLD - message is logged.
+            NRN - message is logged.
+            NMB - message is logged.
+            NMR - message is logged.
+            FAR - message is logged, and a replacement Hold order is sent.
+            NSP - message is logged, and a replacement Hold order is sent.
+            NSU - message is logged, and a replacement Hold order is sent.
+            NAS - message is logged, and a replacement Hold order is sent.
+            NSF - message is logged, and a replacement Hold order is sent.
+            NSA - message is logged, and a replacement Hold order is sent.
+            NVR - message is logged, and a replacement Disband order is sent.
+            YSC - message is logged, and a replacement Waive order is sent.
+            ESC - message is logged, and a replacement Waive order is sent.
+            HSC - message is logged, and a replacement Waive order is sent.
+            NSC - message is logged, and a replacement Waive order is sent.
+            CST - message is logged, and a replacement Waive order is sent.
+            </remarks>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessTME(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a TME message (Indicates the number of seconds until the next deadline).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The TME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessADM(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an ADM message (an administrative message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The ADM message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessHLO(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a HLO message (the start of the game message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The HLO message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessMAP(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a MAP message (the name of the map).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The MAP message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessMDF(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a MDF message (map definition).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The MDF message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessNOT_CCD(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage,System.Boolean)">
+            <summary>Processes a NOT CCD message (the specified country is not in civil disorder).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The NOT message.</param>
+            <param name="messageParameters">The CCD message.</param>
+            <param name="newReconnection">Set to true if the indicated power is newly reconnected.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessNOT_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a NOT TME message (Specifies that the deadline timer has stopped).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The NOT message.</param>
+            <param name="messageParameters">The TME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessNOT_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an unexpected NOT message.
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The NOT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessNOW(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a NOW message (Indicates that a new turn is beginning).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The NOW message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessORD(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an ORD message (a single order and its results for the indicated turn).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The ORD message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_ADM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ ADM message (a rejected ADM message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The ADM message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ DRW message (a rejected DRW message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The DRW message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ GOF message (a rejected GOF message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The GOF message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_HLO(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ HLO message (a rejected HLO message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The HLO message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_HST(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ HST message (a rejected HST message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The HST message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_IAM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ IAM message (a rejected IAM message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The IAM message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_NME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ NME message (a rejected NME message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The NME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_NOT_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ NOT DRW message (a rejected NOT DRW message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The NOT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_NOT_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ NOT GOF message (a rejected NOT GOF message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The NOT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_NOT_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an unexpected REJ NOT message.
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The NOT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_NOW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ NOW message (a rejected NOW message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The NOW message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_ORD(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ ORD message (a rejected ORD message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The ORD message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_SCO(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ SCO message (a rejected SCO message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The SCO message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_SND(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ SND message (a rejected SND message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The SND message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_SUB(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ SUB message (a rejected SUB message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The SUB message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a REJ TME message (a rejected TME message).
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The TME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessREJ_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an unexpected REJ message.
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The REJ message.</param>
+            <param name="rejectMessage">The message that was unexpected.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessSCO(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a SCO message (Supply center ownership).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The SCO message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES DRW message (a confirmation of a DRW message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The DRW message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES GOF message (a confirmation of a GOF message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The GOF message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_IAM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES IAM message (a confirmation of a IAM message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The IAM message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_NME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES NME message (a confirmation of a NME message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The NME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_NOT(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES NOT message (a confirmation of a NOT message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The NOT message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_OBS(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES OBS message (a confirmation of a OBS message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The OBS message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_SND(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES SND message (a confirmation of a SND message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The SND message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes a YES TME message (a confirmation of a TME message).
+            The default version does nothing.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The TME message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.BaseBot.ProcessYES_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Processes an unexpected YES message.
+            The default version sends the message to the log.
+            </summary>
+            <param name="msg">The YES message.</param>
+            <param name="confirmedMessage">The message that was unexpected.</param>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.Game">
+            <summary>The current <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Game"/>.
+            </summary>
+            <value>The current <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Game"/>.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.Power">
+            <summary>Gets the <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Power"/> of this Bot.
+            </summary>
+            <value>The <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Power"/> of this Bot.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.CurrentOrders">
+            <summary>Gets the orders for the current turn.
+            </summary>
+            <value>The orders for the current turn.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.Options">
+            <summary>Gets the options that were specified when the game was started.
+            </summary>
+            <value>The options that were specified when the game was started.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.Passcode">
+            <summary>The passcode that was sent from the server when the game was started.
+            </summary>
+            <value>The passcode that was sent from the server when the game was started</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.PowersInCivilDisorder">
+            <summary>Gets the <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Power">Powers</see> that are in civil disorder.
+            </summary>
+            <value>A list of <see cref="P:Polarsoft.Diplomacy.Daide.BaseBot.Power">Powers</see> that are in civil disorder.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.EndOfGameCause">
+            <summary>The cause for the end of the game.
+            </summary>
+            <value>The cause for the end of the game.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.BaseBot.LatestReceivedMessage">
+            <summary>Gets the last received message.
+            </summary>
+            <value>The last received message.</value>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.TokenFactory">
+            <summary>A class that helps in constructing tokens.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.FromMnemonic(System.String)">
+            <summary>Creates a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> from a string mnemonic.
+            </summary>
+            <param name="mnemonic">The mnemonic (three letter representation of the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> that represents this mnemonic.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.FromString(System.String)">
+            <summary>Creates a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> from a string.
+            </summary>
+            <param name="value">The <see cref="T:System.String"/> that is to be converted into a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <remarks>This function will return a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> that has a <see cref="T:Polarsoft.Diplomacy.Daide.TokenType"/> of <see cref="F:Polarsoft.Diplomacy.Daide.TokenType.Text"/>.</remarks>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> that represents this string.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.FromBytes(System.Byte,System.Byte)">
+            <summary>Creates a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> from two bytes.
+            This is only to be used if the Daide Connection doesn't contain
+            a predefined token for the bytes (in case the Daide protocol
+            is updated without this framework being updated).
+            </summary>
+            <param name="high">The high byte.</param>
+            <param name="low">The low byte.</param>
+            <returns>A token that corresponds to the two bytes.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.FromByteArray(System.Byte[])">
+            <summary>Creates a list of <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see> from an array of <see cref="T:System.Byte">bytes</see>.
+            </summary>
+            <param name="bytes">Bytes.</param>
+            <returns>A list of <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see> created from the bytes.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.FromInt(System.Int32)">
+            <summary>Creates a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> from an <see cref="T:System.Int32"/>.
+            </summary>
+            <param name="number">The <see cref="T:System.Int32"/> that is to be converted into a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <remarks>
+            This function will return a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> that has a <see cref="T:Polarsoft.Diplomacy.Daide.TokenType"/> of <see cref="F:Polarsoft.Diplomacy.Daide.TokenType.Number"/>.
+            This function will only accept numbers in the range of -8192 - 8191.
+            </remarks>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> that represents this number.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.ByteArrayEntry.Equals(System.Object)">
+            <summary>Compares this instance with another object.
+            </summary>
+            <param name="obj">The object to compare with.</param>
+            <returns>True if the objects are equal, false otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenFactory.ByteArrayEntry.GetHashCode">
+            <summary>Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
+            </summary>
+            <returns>A hash code for the current <see cref="T:Polarsoft.Diplomacy.Daide.TokenFactory.ByteArrayEntry"/>.</returns>
+            <remarks>See <see cref="M:System.Object.GetHashCode"/> for more information.</remarks>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.Token">
+            <summary>Represents a single Token that is sent to and received from the DAIDE server.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.Equals(System.Object)">
+            <summary>Compares this instance with another object.
+            </summary>
+            <param name="obj">The object to compare with.</param>
+            <returns>True if the objects are equal, false otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.GetHashCode">
+            <summary>Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
+            </summary>
+            <returns>A hash code for the current <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</returns>
+            <remarks>See <see cref="M:System.Object.GetHashCode"/> for more information.</remarks>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.op_Equality(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Compares two Token objects for equality.
+            </summary>
+            <param name="o1">The first Token.</param>
+            <param name="o2">The second Token</param>
+            <returns><c>True</c> if the objects are equal, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.op_Inequality(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Compares two Token objects for inequality.
+            </summary>
+            <param name="o1">The first Token.</param>
+            <param name="o2">The second Token</param>
+            <returns><c>False</c> if the objects are equal, <c>true</c> otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.ToString">
+            <summary>Returns the representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as a <see cref="T:System.String"/>
+            </summary>
+            <returns>The representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as a <see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.ToBytes">
+            <summary>Returns the representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as an array of <see cref="T:System.Byte">bytes</see>.
+            </summary>
+            <returns>The representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as an array of <see cref="T:System.Byte">bytes</see>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.ToNumber">
+            <summary>Returns the representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as a <see cref="T:System.Int32"/>.
+            </summary>
+            <returns>The representation of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> as a <see cref="T:System.Int32"/>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.Add(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see>.
+            </summary>
+            <param name="t1">The first <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <param name="t2">The second <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see></returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.op_Addition(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see>.
+            </summary>
+            <param name="left">The first <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <param name="right">The first <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see></returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Token.op_BitwiseAnd(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see>,
+            with the second <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> enclosed in parentheses.
+            </summary>
+            <param name="left">The first <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <param name="right">The first <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see></returns>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.OpenBracket">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the open bracket '('.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CloseBracket">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the close bracket ')'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ARMY">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing an army (AMY).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FLEET">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing a fleet (FLT).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CTO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Convey to'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CVY">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Convoy'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HLD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Hold'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MTO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Move To'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SUP">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Support'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.VIA">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Via' (used in orders).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.DSB">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Disband'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.RTO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Retreat to'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.BLD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Build'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.REM">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Remove'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.WVE">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order 'Waive build'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MBV">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'OK'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CST">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No coast specified for fleet build in Bicoastal province (<see cref="T:Polarsoft.Diplomacy.Daide.TokenType"/>, or an attempt to build a fleet inland, or an army at sea'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ESC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not an empty supply center'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FAR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not adjacent'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HSC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not a home supply center'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NAS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not at sea (for a convoying fleet)'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NMB">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No more builds allowed'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NMR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No more removals allowed'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NRN">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No retreat needed for this unit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NRS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not the right season'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSA">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No such army (for unit being ordered to <see cref="F:Polarsoft.Diplomacy.Daide.Token.CTO"/> or for unit being <see cref="F:Polarsoft.Diplomacy.Daide.Token.CVY"/>'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not a supply center'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSF">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No such fleet (in the <see cref="F:Polarsoft.Diplomacy.Daide.Token.VIA"/> section of <see cref="F:Polarsoft.Diplomacy.Daide.Token.CTO"/> or the unit performing a <see cref="F:Polarsoft.Diplomacy.Daide.Token.CVY"/>'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSP">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No such province'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSU">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'No such unit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NVR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not a valid retreat space'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NYU">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not your unit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.YSC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order note 'Not your supply center'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SUC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order result 'Success'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.BNC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order result 'Move bounced'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CUT">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order result 'Support cut'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.DSR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order result 'Move via convoy failed due to dislodged convoying fleet'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NSO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the order result 'No such order (for a support, convoying fleet, or convoyed army)'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.RET">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> indicating that the unit was disloged and must retreat.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NCS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'North coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NEC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'North-East coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ECS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'East coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SEC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'South-East coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SCS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'South coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SWS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'South-West coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.WCS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'West coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NWC">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the coast 'North-West coast'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SPR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the phase 'Spring (Movement phase).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SUM">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the phase 'Summer (Retreat phase).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FAL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the phase 'Fall (Movement phase).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.AUT">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the phase 'Autumn (Retreat phase).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.WIN">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the phase 'Winter (Build phase).
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CCD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Country in civil disorder'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.DRW">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Draw'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FRM">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Message from'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.GOF">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Go flag'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HLO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Hello (start of game)'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HST">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'History'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HUH">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Syntax error / not understood'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.IAM">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'I am'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.LOD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Load game'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MAP">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Map to be used for this game'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MDF">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Map definition'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MIS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Missing orders'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NME">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Name'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NOT">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Logical not'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NOW">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Current position'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.OBS">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Observer'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.OFF">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Turn off (Exit)'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ORD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Order results'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.OUT">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Country is out of the game'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.PRN">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Parenthesis error'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.REJ">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Reject'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SCO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Supply center ownership'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SLO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Solo'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SND">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Send message'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SUB">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Submit order'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SVE">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Save'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.THX">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Thanks for the order'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.TME">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Time to deadline'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.YES">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Accept'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ADM">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Administrative message'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SMR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the command 'Participants in the game'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.AOA">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Any orders allowed'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.BTL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Build time limit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ERR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HUH"/> information 'Error location'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.LVL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Language level'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MRT">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.NOW"/> parameter 'Must retreat to'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.MTL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Movement time limit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NPB">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'No press during builds'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.NPR">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'No press during retreats'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.PDA">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Partial draws allowed'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.PTL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Press time limit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.RTL">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Retreat time limit'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.UNO">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.SCO"/> parameter 'Unowned'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.DSD">
+            <summary>A <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing the <see cref="F:Polarsoft.Diplomacy.Daide.Token.HLO"/> parameter 'Deadline stops on disconnection'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ALY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'An offer of an alliance'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.AND">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Logical AND'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.BWX">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'None of your business'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.DMZ">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Demilitarised zone'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ELS">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Else'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.EXP">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Explain'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FWD">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Forward press'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FCT">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Fact'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.FOR">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'For specified turn'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.HOW">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'How to attack'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.IDK">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'I don't know'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.IFF">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'If'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.INS">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Insist'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.OCC">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Occupy'.
+            </summary> 
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.ORR">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Logical OR'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.PCE">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Peace'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.POB">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Position on board'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.PRP">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Propose'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.QRY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Query'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SCD">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Supply center distribution'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SRY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Sorry'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.SUG">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Suggest'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.THK">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Think'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.THN">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Then'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.TRY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Try the following tokens'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.VSS">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Versus'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.WHT">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'What to do with'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.WHY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Why'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.XDO">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Moves to do'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.XOY">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'X owes Y'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.YDO">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'You provide the orders for these units'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.CHO">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Choose out of the following...'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.BCC">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Forward all press sent...'.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.Token.UNT">
+            <summary>A press <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> representing 'Any unit'.
+            </summary>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Token.Type">
+            <summary>Gets the type of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.
+            </summary>
+            <value>The <see cref="T:Polarsoft.Diplomacy.Daide.TokenType"/> of this <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.Token.IsBracket">
+            <summary>Determines if this token is a bracket token.
+            </summary>
+            <returns><c>True</c> if this token is a bracket, <c>false</c> otherwise.</returns>
+            <remarks>See <see cref="F:Polarsoft.Diplomacy.Daide.Token.OpenBracket"/> or
+            <see cref="F:Polarsoft.Diplomacy.Daide.Token.CloseBracket"/> for more information.</remarks>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.Connection">
+            <summary>Responsible for establishing and keeping a connection to a server.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Connection.#ctor(Polarsoft.Diplomacy.Game)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.Connection"/> instance.
+            </summary>
+            <param name="game">The <see cref="T:Polarsoft.Diplomacy.Game"/> instance.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Connection.Connect(System.String,System.Int32)">
+            <summary>Connects this instance to a DAIDE server.
+            </summary>
+            <param name="hostName">HostName.</param>
+            <param name="port">Port.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Connection.Send(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Sends a message to the server.
+            </summary>
+            <param name="message">The message to send.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.Connection.Disconnect">
+            <summary>Disconnects this instance from the DAIDE server.
+            </summary>
+        </member>
+        <member name="E:Polarsoft.Diplomacy.Daide.Connection.DiplomaticMessageReceived">
+            <summary>Occurs when a new Diplomatic Message has been received.
+            </summary>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.Connection.MessageType">
+            <summary>The type of message
+            </summary>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.TokenType">
+            <summary>
+            Represents the type of <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Misc">
+            <summary>A miscellaneous token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Power">
+            <summary>A power token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.UnitType">
+            <summary>A unit token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Order">
+            <summary>An order token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.OrderNote">
+            <summary>An ordernote.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.OrderResult">
+            <summary>An orderresult.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Coast">
+            <summary>A coast.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Phase">
+            <summary>A phase.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Command">
+            <summary>A command token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Parameter">
+            <summary>A parameter token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Press">
+            <summary>A press token.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Text">
+            <summary>A token representing text.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceInlandNonSupplyCenter">
+            <summary>An inland province that is not a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceInlandSupplyCenter">
+            <summary>An inland province that is a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceSeaNonSupplyCenter">
+            <summary>An sea province that is not a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceSeaSupplyCenter">
+            <summary>An sea province that is a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceCoastalNonSupplyCenter">
+            <summary>An coastal province that is not a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceCoastalSupplyCenter">
+            <summary>An coastal province that is a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceBicoastalNonSupplyCenter">
+            <summary>An bicoastal province that is not a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.ProvinceBicoastalSupplyCenter">
+            <summary>An bicoastal province that is a supply center.
+            </summary>
+        </member>
+        <member name="F:Polarsoft.Diplomacy.Daide.TokenType.Number">
+            <summary>A number token.
+            </summary>
+        </member>
+        <member name="T:Polarsoft.Diplomacy.Daide.TokenMessage">
+            <summary>A class that represents a message that is sent to and from the DAIDE server.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.#ctor">
+            <summary>Creates a new empty <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> instance.
+            </summary>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.#ctor(Polarsoft.Diplomacy.Daide.Token)">
+            <summary>/// Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> instance, containing a single <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.
+            </summary>
+            <param name="token">Token.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.#ctor(System.Byte[])">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> instance.
+            </summary>
+            <param name="bytes">Bytes.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.ToString">
+            <summary>Returns the representation of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> as a <see cref="T:System.String"/>
+            </summary>
+            <returns>The representation of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> as a <see cref="T:System.String"/></returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.ToBytes">
+            <summary>Returns the representation of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> as an array of <see cref="T:System.Byte">bytes</see>
+            </summary>
+            <returns>The representation of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> as an array of <see cref="T:System.Byte">bytes</see></returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.Equals(System.Object)">
+            <summary>Compares this instance with another object.
+            </summary>
+            <param name="obj">The object to compare with.</param>
+            <returns>True if the objects are equal, false otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.GetHashCode">
+            <summary>Serves as a hash function for a particular type, suitable for use in hashing algorithms and data structures like a hash table.
+            </summary>
+            <returns>A hash code for the current <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</returns>
+            <remarks>See <see cref="M:System.Object.GetHashCode"/> for more information.</remarks>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_Equality(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Compares two TokenMessage objects for equality.
+            </summary>
+            <param name="o1">The first TokenMessage.</param>
+            <param name="o2">The second TokenMessage</param>
+            <returns><c>True</c> if the objects are equal, <c>false</c> otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_Inequality(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Compares two TokenMessage objects for inequality.
+            </summary>
+            <param name="o1">The first TokenMessage.</param>
+            <param name="o2">The second TokenMessage</param>
+            <returns><c>False</c> if the objects are equal, <c>true</c> otherwise.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.Add(Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Adds a <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> to the end of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.
+            </summary>
+            <param name="message">The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the tokens to be added to this message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.Add(Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Adds a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> to the end of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.
+            </summary>
+            <param name="token">The <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> to be added to this message.</param>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.Add(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Adds two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>.
+            </summary>
+            <param name="t1">The first <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <param name="t2">The first <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <returns>A new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_Addition(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>.
+            </summary>
+            <param name="left">The first <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <param name="right">The second <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <returns>A new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_BitwiseAnd(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>,
+            with the second <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> enclosed in parentheses.
+            </summary>
+            <param name="left">The first <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <param name="right">The second <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the two <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage">TokenMessages</see>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_Addition(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> and a <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.
+            </summary>
+            <param name="left">The <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <param name="right">The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> and the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_Addition(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from a <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> and a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.
+            </summary>
+            <param name="left">The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <param name="right">The <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> and the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_BitwiseAnd(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.TokenMessage)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> and a <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>,
+            with the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> enclosed in parentheses.
+            </summary>
+            <param name="left">The <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <param name="right">The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> and the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</returns>
+        </member>
+        <member name="M:Polarsoft.Diplomacy.Daide.TokenMessage.op_BitwiseAnd(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.Token)">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> from a <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> and a <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>,
+            with the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/> enclosed in parentheses.
+            </summary>
+            <param name="left">The <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</param>
+            <param name="right">The <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</param>
+            <returns>A <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing the the <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> and the <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.</returns>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.TokenMessage.MessageEnclosed">
+            <summary>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing this message enclosed in parentheses.
+            </summary>
+            <value>Creates a new <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/> containing this message enclosed in parentheses.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.TokenMessage.SubMessages">
+            <summary>Returns the Submessages of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.
+            </summary>
+            <remarks>
+            A submessage is a collection of <see cref="T:Polarsoft.Diplomacy.Daide.Token">Tokens</see> that are
+            enclosed in parenthesis, or a single <see cref="T:Polarsoft.Diplomacy.Daide.Token"/>.
+            </remarks>
+            <value>The SubMessages of this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</value>
+        </member>
+        <member name="P:Polarsoft.Diplomacy.Daide.TokenMessage.Tokens">
+            <summary>The tokens that make up this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.
+            </summary>
+            <value>The tokens that make up this <see cref="T:Polarsoft.Diplomacy.Daide.TokenMessage"/>.</value>
+        </member>
+    </members>
+</doc>

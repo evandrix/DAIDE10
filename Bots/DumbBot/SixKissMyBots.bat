@@ -1,0 +1,1 @@
+DumbBot.exe -smaginot.diplomacy.se

@@ -1,0 +1,16 @@
+How To Enter Build Orders
+
+All orders are entered by clicking on the map.
+
+- To build an army, left-click on the home centre you wish to build in.
+- To build a fleet, right-click on the home centre you wish to build in.
+- To cancel a build order, click on the order in the orders list, and then
+click the Cancel Order button.
+- If you do not order sufficient builds, the remainder will be waived
+automatically.
+
+When you are done, hit the Submit Button to send your orders to the Server.
+
+Note that if you do not have any open home centres, you must still hit
+the Submit button in order to submit your waive orders. Unusable builds
+are not automatically waived.

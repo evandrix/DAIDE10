@@ -1,0 +1,1 @@
+SCO (BYZ con ) (VAN sps tun) (MAC gre) (EGY smy) (TUR ank) (FRA par bre) (VIS spa mar) (OST rom) (GER war) (SAX hol den) (VIK stp nwy nap) (HUN mos ase sie sev) (UNO  boh gal ruh sil ukr bud mun ser bel ber edi kie lon lvp rum tri ven bul eir sar ) 

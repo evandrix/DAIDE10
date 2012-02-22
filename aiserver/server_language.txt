@@ -1,0 +1,277 @@
+00 -1 NME [sub01] [sub01]				; client_server_message
+00 -1 OBS
+00 -1 IAM [sub03] [sub02]
+00 -1 MAP
+00 -1 MDF
+00 -1 YES [sub31]
+00 -1 REJ [sub31]
+00 0 HLO
+00 -1 NOW
+00 -1 SCO
+00 -1 HST [sub12]
+00 -1 HST
+00 0 SUB [repeat] [sub17]
+00 0 SUB [sub12] [repeat] [sub17]
+00 0 NOT [sub1A]
+00 0 MIS
+00 0 GOF
+00 0 ORD
+00 -1 TME [sub02]
+00 -1 TME
+00 0 DRW
+00 10 DRW [sub04]
+00 10 SND [sub04] [sub1E]
+00 10 SND [sub12] [sub04] [sub1E]
+00 -1 ADM [sub01] [sub01]
+
+01 -1 [string]						; A string
+
+02 -1 [number]						; A number
+
+03 -1 [cat41]							; A power
+
+04 0 [repeat] [cat41]					; A list of powers
+
+05 0 [sub07] [sub08]					; The provinces in MDF
+
+06 0 [repeat] [sub0B]					; The adjacencies in MDF
+
+07 0 [repeat] [sub09]					; The supply centres in MDF
+
+08 0 [repeat] [province]				; A list of provinces
+
+09 0 [cat41] [repeat] [province]		; The supply centres for a power in MDF
+09 0 UNO [repeat] [province]			; The neutral SCs in MDF
+09 0 [sub04] [repeat] [province]		; SCs that are home for multiple powers in MDF
+
+0B 0 [province] [repeat] [sub0C]		; The adjacencies for a province in MDF
+
+0C 0 [cat42] [repeat] [token0E]		; The adjacencies for an implicit coast in MDF
+0C 0 [sub0D] [repeat] [token0E]		; The adjacencies for an explicit coast in MDF
+
+0D 0 FLT [cat46]						; The explicit coast in the adjacencies in MDF
+
+0E 0 [province]						; A province
+0E 0 [sub0F]							; A province and coast
+
+0F 0 [province] [cat46]				; A province and coast
+
+10 0 [repeat] [sub11]					; The list of variants in HLO
+
+11 0 LVL [number]						; Game level in HLO
+11 0 MTL [number]						; Movement time limit in HLO
+11 0 RTL [number]						; Retreat time limit in HLO
+11 0 BTL [number]						; Builds time limit in HLO
+11 0 AOA								; AOA variant in HLO
+11 10 PDA								; NoDIAS in HLO
+11 10 PTL [number]					; Press time limit before deadline in HLO
+11 10 NPR								; No press during retreats variant in HLO
+11 10 NPB								; No press during builds variant in HLO
+
+12 -1 [cat47] [number]					; A turn (e.g. SPR 1901)
+
+13 0 [cat41] [cat42] [province]		; A unit
+13 0 [cat41] [cat42] [sub0F]			; A unit on an explicit coast
+13 0 [cat41] [cat42] [province] MRT [sub15]	; A unit that must retreat
+13 0 [cat41] [cat42] [sub0F] MRT [sub15]		; A unit on an explicit coast that must retreat
+
+14 0 [cat41] [cat42] [province]			; A unit         unit_with_location
+14 0 [cat41] [cat42] [sub0F]			; A unit on an explicit coast
+14 0 [cat41] UNT [province]				; A unit of unspecified type
+
+15 0 [repeat] [token0E]				; A list of provinces, some with coasts
+
+16 0 [cat41] [repeat] [province]		; The supply centres for a power in SCO
+16 0 UNO [repeat] [province]			; The neutral SCs in SCO
+
+17 0 [sub18] HLD						; Hold order
+17 0 [sub18] MTO [token0E]			; Move order
+17 0 [sub18] SUP [sub18]				; Support to hold
+17 0 [sub18] SUP [sub18] MTO [province]	; Support to move
+17 0 [sub18] CVY [sub18] CTO [province]	; Convoy order
+17 0 [sub18] CTO [province] VIA [sub08]	; Move by convoy order
+17 0 [sub18] RTO [token0E]			; Retreat order
+17 0 [sub18] DSB						; Disband order
+17 0 [sub18] BLD						; Build order
+17 0 [sub18] REM						; Remove order
+17 0 [cat41] WVE						; Waive order
+
+18 0 [cat41] [cat42] [province]			; A unit         unit_with_location
+18 0 [cat41] [cat42] [sub0F]			; A unit on an explicit coast
+
+19 0 MBV								; Order notes
+19 0 FAR
+19 0 NSP
+19 0 NST
+19 0 NSU
+19 0 NAS
+19 0 NSF
+19 0 NSA
+19 0 NYU
+19 0 NRN
+19 0 YSC
+19 0 ESC
+19 0 HSC
+19 0 NSC
+19 0 CST
+19 0 NMB
+19 0 NMR
+19 0 NRS
+19 0 BPR
+
+1A 0 SUB [sub17]						; Commands which can start with NOT()
+1A 0 SUB
+1A 0 GOF
+1A 0 DRW
+1A 10 DRW [sub04]
+1A 0 TME
+1A 0 TME [sub02]
+
+1B 0 SUC								; Order results
+1B 0 BNC
+1B 0 CUT
+1B 0 DSR
+1B 0 FLD
+1B 0 NSO
+
+1C 0 [token19]						; Order results with or without retreat on the end
+1C 0 [token1B]
+1C 0 [token19] RET
+1C 0 [token1B] RET
+
+1D 10 SND [sub04] [sub1E]
+
+1E 10 PRP [sub1F]						; Messages which can be sent between powers
+1E 10 PRP [sub23]						; press_message
+1E 10 FCT [sub1F]
+1E 10 CCL [sub1E]
+1E 10 TRY [sub20]
+1E 10 YES [sub1E]
+1E 10 REJ [sub1E]
+1E 10 BWX [sub1E]
+1E 10 HUH [sub22]
+1E 60 INS [sub1F]
+1E 60 QRY [sub1F]
+1E 60 SUG [sub1F]
+1E 60 THK [sub1F]
+1E 60 THK [sub24]
+1E 60 FCT [sub24]
+1E 60 IDK [sub25]
+1E 70 WHT [sub18]
+1E 70 HOW [sub2D]
+1E 70 HOW [sub03]
+1E 80 EXP [sub12] [sub1E]
+1E 80 YES [sub26]
+1E 80 REJ [sub26]
+1E 80 SRY [sub26]
+1E 80 IDK [sub26]
+1E 100 IFF [sub1F] THN [sub1E]
+1E 100 IFF [sub1F] THN [sub1E] ELS [sub1E]
+1E 120 FRM [sub03] [sub04] [sub1E]
+1E 130 WHY [sub29]
+1E 130 POB [sub2A]
+1E 130 WHY [sub2F]
+1E 130 IDK [sub2F]
+1E 8000 [string]
+
+1F 10 PCE [sub04]						; Offers
+1F 10 ALY [sub04] VSS [sub04]
+1F 10 DRW
+1F 10 SLO [sub03]
+1F 10 NOT [sub1F]
+1F 10 NAR [sub1F]
+1F 20 XDO [sub17]
+1F 20 DMZ [sub04] [sub08]
+1F 40 SCD [repeat] [sub16]
+1F 40 OCC [repeat] [sub14]
+1F 50 AND [sub1F] [repeat] [sub1F]
+1F 50 ORR [sub1F] [repeat] [sub1F]
+1F 50 CHO [sub28] [repeat] [sub1F]
+1F 90 FOR [sub12] [sub1F]
+1F 90 FOR [sub27] [sub1F]
+1F 110 XOY [sub03] [sub03]
+1F 110 YDO [sub03] [repeat] [sub18]
+1F 120 SND [sub03] [sub04] [sub1E]
+1F 120 FWD [sub04] [sub03] [sub03]
+1F 120 BCC [sub03] [sub04] [sub03]
+
+20 10									; Contents of a TRY message
+20 10 [repeat] [token21]				; try_parameters
+
+21 10 PRP
+21 10 PCE
+21 10 ALY
+21 10 VSS
+21 10 CCL
+21 10 DRW
+21 10 SLO
+21 10 NOT
+21 10 NAR
+21 10 YES
+21 10 REJ
+21 10 BWX
+21 10 XDO
+21 10 DMZ
+21 10 AND
+21 10 ORR
+21 10 CHO
+21 10 SCD
+21 10 OCC
+21 10 INS
+21 10 QRY
+21 10 THK
+21 10 FCT
+21 10 IDK
+21 10 SUG
+21 10 WHT
+21 10 HOW
+21 10 EXP
+21 10 SRY
+21 10 FOR
+21 10 IFF
+21 10 THN
+21 10 ELS
+21 10 XOY
+21 10 YDO
+21 10 FRM
+21 10 BCC
+21 10 FWD
+21 10 SND
+21 10 WHY
+21 10 POB
+
+
+22 10 [any]								; any_token_sequence
+
+23 30 AND [sub1F] [repeat] [sub1F]		; logical_operator
+23 30 ORR [sub1F] [repeat] [sub1F]
+
+24 60 QRY [sub1F]						; negatable query
+24 60 NOT [sub25]
+
+25 60 QRY [sub1F]						; query
+
+26 80 EXP [sub12] [sub1E]				; explanation
+
+27 90 [sub12] [sub12]					; period
+
+28 50 [number] [number]
+
+29 130 THK [sub1F]						; think_and_fact
+29 130 FCT [sub1F]
+
+2A 130 WHY [sub29]						
+
+2D 0 [province]
+
+2F 130 PRP [sub1F]
+2F 130 INS [sub1F]
+2F 130 SUG [sub1F]
+
+30 130 WHY [sub29]
+
+31 -1 MAP [sub01]						; Acknowledgable_command
+31 -1 SVE [sub01]
+
+32 -1 [cat41] [number]
+

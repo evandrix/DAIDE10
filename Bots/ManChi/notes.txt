@@ -1,0 +1,113 @@
+Various disorganized notes on how Man'chi works.
+
+-----------------------------------------------------------------------
+Man'chi Analysis:
+
+THIS LIST IS OBSOLETE
+
+The following types of analysis are included in Man'chi.  Not all apply
+to every phase/situation, and some are intended for diagnostic display
+only.  Hopefully this list will make some of the displays clearer to
+use.
+
+Fear Factor (position, per-country)
+    This is part of the "Fear Factor" analysis, suggested by Paul Windsor
+    in the "Geography is Destiny" articles.  This per-country analysis
+    identifies the fear *projected* by a country, that is, which supply
+    centers does it need to capture for a solo.  Due to the method of
+    counting centers and stalemate lines, this analysis stops being valid 
+    in the end game.
+
+Fear Factor Summary (position, overall)
+    A pretty country x country table of fear factor values.  This differs
+    from the articles in that supply centers at the farthest tempi are
+    rated proportionally to the number of possible centers.  Also, values
+    are multipled by 100 for an easier display.
+
+Fear Factor Delta (position, overall)
+    A comparion of the fear factor summary values between this phase 
+    and previous phases (both the previous phase and previous move
+    phase, if different).  The value in the table is positive and red
+    for increasing threat, and negative and green for decreasing.
+
+Defensive Goals (position, per-country)
+    Identifies supply centers and nearby provinces that need to be
+    defended against an attack (both this phase and future phases).  
+    Assumes all countries are equally hostile.
+    
+Colonization Goals (position, per-country, only if unowned SCs)
+    Lists unowned supply centers within reach of the country (to be
+    colonized) but not too close to another country.  In other words,
+    identifies the "natural" 1901 captures.
+    
+Attack Goals (position, country-vs-country)
+    Lists supply centers and nearby provinces owned by the target country.
+    Simple and thus weak at the moment.
+
+Peace Goals (position, country-vs-country)
+    Very simple: if we're at peace with a country, creates goals to avoid
+    its supply centers and units.  Created because following only the
+    attack goals would sometimes order units to move through allied SCs 
+    (oops!) to get to the enemy.
+
+Potential Bounces (position, overall, retreat phases)
+    If multiple units must retreat and two could retreat to the same
+    location (for a bounce and disband), this identifies those potential
+    bounces.  See automatic retreat orders.
+
+Random Orders (thoughts, per-country, all phases)
+    How exciting... random orders.  Rand-Bot just submits the orders from
+    this analysis in a DAIDE game.
+    
+Hold Orders (thoughts, per-country, all phases except remove)
+    Even more exciting... hold orders.  Not used anywhere.
+
+Defensive Moves (thoughts, per-country, move phases)
+    Uses defensive (and colonization) goals to suggest defensive moves.
+    Works okay if neighbours are hostile.  However, if a country is 
+    neutral, the generated moves may offend them.  For example,
+    Eng: F Lon - Channel to "defend it" by keeping France out.
+
+Attack Moves (thoughts, country-vs-country, move phases)
+    Uses attack (and colonization) goals to suggest attacking moves
+    against each neighbour.  Currently pays no attention to defence.
+    Weak moves.  Uses the exact same move generator as the previous
+    analysis, just driven by a different set of goals.  I'm trying to
+    clearly separate the "what should we do" operational goals from 
+    "how should we do it" tactical orders.
+
+Automatic Retreats (thoughts, per-country, retreat phases)
+    Many retreats have no or very litle choice to them.  This tries to 
+    identify many of these and many other special retreat conditions,
+    including resolution of potential bounces involving only one
+    country.  Surprisingly, this is about half of all retreats in the 
+    game.  Any retreats that are not "automatic" are left unordered in 
+    this diagnostic analysis.
+    
+Defensive Retreats (thoughts, per-country, retreat phase)
+    Orders retreats towards home, as defined by the defensive goals
+    (and automatic retreats).
+
+Revenge Retreats (thoughts, per-country, retreat phase)
+    Orders retreats based on attack goals against the country that
+    dislodged it.
+
+Automatic Builds (thoughts, per-country, build phase)
+    Identifies automatic builds and waives -- not very many of them.
+    This diagnostic display will often leave some builds unordered.
+    
+Defensive Builds (thoughts, per-country, build phase)
+    Orders builds based on defensive goals.
+    
+Defensive Removals (thoughts, per-country, removals phase)
+    Order removals based on defensive goals.  Typically this is the unit
+    farthest from home.
+
+Included in Man'chi but not in any analysis display windows are the
+following calculations:
+- location and province distances, including lots of ways of saying 
+    "how quickly can I reach X?" or "what units are near X?"
+- interesting convoy routes, including land masses
+- "future" positions including mandatory disbands, removals & captures
+
+-----------------------------------------------------------------------

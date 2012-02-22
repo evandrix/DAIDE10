@@ -1,0 +1,48 @@
+Press
+
+Press is handled through two tabs - the Press Tab in the Action Pane, and the
+Incoming Press Tab on the Information Pane.
+
+From the Press Tab, a new message can be composed using the DAIDE negotiation
+language by clicking the Compose Press Message button. This takes you to the
+Compose Press dialog. Use the buttons to select the press elements to make up
+the message. Sometimes there are more options available than the number of
+buttons. When this is the case, the scrollbar allows the options to be 
+scrolled. The highlight in the message shows what you are currently selecting.
+Do not try and alter the highlight - information must be entered in the order
+you are asked for it. Once you have completed the message, the OK button
+becomes available. You are then asked which powers to send the message to - 
+you may select any combination. The message is then sent.
+
+From the Press Tab, you may also send a free text message, by typing it into 
+the text box and then pressing the Send Text Press Message button. Again, you
+are then asked to select the powers to send it to, and then it is sent.
+
+Messages you receive, and a copy of the messages you send, are displayed on 
+the Incoming Press Tab. They are listed in chronological order. 
+Double-clicking on a message brings up the reply box. From there, you can 
+select to compose a reply in the DAIDE language, which brings up the Compose 
+Press message box (as described above), or you can forward the message to 
+another power. If the message you Double-clicked was a DAIDE language message
+which you received, you can also select one of the quick reply buttons. Click
+the button of your choice to send that reply immediately.
+
+Finally from the Press Tab, you can also send Admin messages. To do this, type
+the message into the text box and then press the Send Admin Message button.
+This facility is for Administration messages only (such as if you wish to
+inform the other players that you are having technical problems, or if you 
+have to leave for some out-of-game reason, etc), and must not be used to
+negotiate. The Admin message appears in the Incoming Press list.
+
+Some or all of the press facilities may be disabled from the Server when the
+game is created. This is indicated in the Mapper by the buttons being greyed
+out. All negotiation options are also greyed out until the game has started.
+
+You may see a reply from a Bot saying "I didn't understand your message. 
+I'm only a Bot.". This may be followed by one of two further messages. "I 
+don't understand press." indicates that it is not worth trying to negotiate
+with this power. "Please try a simpler message." indicates that it can 
+perform some negotiation, but not to the level you are using. Try sending
+simpler messages to it. In general, in the Compose Press dialog, the buttons 
+to the left are considered to be simpler messages than those to the right at
+each stage.

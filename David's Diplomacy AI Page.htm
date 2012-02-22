@@ -1,0 +1,127 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>
+David's Diplomacy AI Page
+</title>
+</head><body>
+<h2>David's Diplomacy AI Page</h2><p>
+
+This page contains the files I've made available for the DAIDE project. 
+I've also written an <a 
+href="http://www.ellought.demon.co.uk/dipai/explain.htm">explanation 
+
+of how to use them</a>.</p><p>
+
+</p><h3>Executables</h3><p>
+
+These all require Windows 95/98/NT/2000/XP. For NT, Service Pack 6 is 
+required.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/aimapper.msi">The DAIDE 
+Mapper</a> is a version of Mapper for use with the AI Server. It 
+provides a map which is updated in real time from the server. It can act
+ either as an observer to let you see the game as it progresses, or as a
+ Human Client to allow you to play against the AI's (or against other 
+Humans)</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/aiserver.msi">The DAIDE 
+Server</a> is the central server for the DAIDE project. It runs the 
+games played between the AIs. As it is developed, and bugs are fixed, 
+new versions will be uploaded here on a regular basis. The zip file 
+contains everything that is needed to get the Server running on a Win32 
+machine.</p><p>
+
+Everybody else has written a <a 
+href="http://www.ellought.demon.co.uk/dipai/holdbot.zip">Holdbot</a> so I
+ thought I should do so too...</p><p>
+
+And once you've got a HoldBot, the next thing to write is a <a 
+href="http://www.ellought.demon.co.uk/dipai/randbot.zip">RandBot</a></p><p>
+
+If you want something that plays a little better than either of these, 
+then try <a href="http://www.ellought.demon.co.uk/dipai/dumbbot.zip">DumbBot</a></p><p>
+
+Other Bots are also available from other Authors. See <a 
+href="http://www.daide.org.uk/clients.xml">the DAIDE Central Website, 
+Client Download page</a> for details.</p><p>
+
+</p><h3>Documents</h3><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/overview.rtf">The DAIDE 
+Overview</a> gives an overview of the project, and how it all fits 
+together.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/daide_syntax.pdf">The 
+DAIDE Syntax Document</a> gives the syntax that AI Clients must use to 
+connect to the AI Server. Note that the tokens in this document are 
+encoded into 16 bit values, not sent as text over the TCP/IP link.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/daide_protocol.html">The 
+Low Level Protocol</a> explains how the messages are sent over a TCP/IP 
+connection.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/faq.rtf">The FAQ</a> 
+contains questions and answers on the project. Currently they are mainly
+ questions about why things have been done the way they have.
+
+</p><h3>Source Code</h3><p>
+
+Microsoft Visual Studio Version 6 or above is required to build this 
+software.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/aiclient.zip">The AI 
+Client Framework</a> is a framework which does all the basic stuff an AI
+ has to do, leaving the AI programmer to get on with the difficult bit !
+ Based on three classes - MapAndUnits contains all the information on 
+the game map and the current position. AiClientDlg contains the main 
+dialog (which does very little), and BaseBot is the Base class from 
+which the users AI is derived. It can equally well be used as the basis 
+for an observer.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/holdbot_source.zip">The 
+Holdbot above</a> was written using the above framework. This file 
+contains the two new and one changed file that must be added to the AI 
+Client Framework Project to make it into a HoldBot.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/randbot_source.zip">The 
+Randbot above</a> was written using the above framework. This file 
+contains the two new and one changed file that must be added to the AI 
+Client Framework Project to make it into a RandBot.</p><p>
+
+<a href="http://www.ellought.demon.co.uk/dipai/dumbbot_source.zip">The 
+DumbBot above</a> was also written using the AI Client Framework. Once 
+again, DumbBot requires just three files - a .cpp and .h for the Bot 
+class, and a new Bot_Type.h to set the type of Bot. DumbBot was written 
+in just 2 days, and the logic is all pretty simple. As such it is a 
+fairly good coding example of how to write a slightly competent Bot.</p><p>
+
+In order to compile these, you need the DAIDE CSP DLL, written by Andrew
+ Rose. The latest version can be found at <a 
+href="http://www.daide.org.uk/index.xml">the DAIDE Central Website</a>. 
+However, at times, the latest version of the code there will not work 
+with the above source, until I have the time to update the AI Client 
+Framework to include the latest modifications. The version of the DAIDE 
+CSP DLL which works with the above Source code can be found <a 
+href="http://www.ellought.demon.co.uk/dipai/sdk.david.00.03.zip">here</a>.</p><p>
+
+There is no proper help for The AI Client Framework. However there is a 
+text file containing a series of e-mails where I explain how it is meant
+ to all work <a 
+href="http://www.ellought.demon.co.uk/dipai/aiclient.txt">here</a>.</p><p>
+
+The source code for the Mapper and Server are not currently available, 
+as I am still developing them, and want to avoid the problems of source 
+control, etc. However, if there is a specific module that you'd like to 
+see the source code for, then please ask. Here is:
+
+</p><ul>
+<li><a href="http://www.ellought.demon.co.uk/dipai/syntax_check.zip">The
+ syntax checking module from the server.</a></li>
+</ul><p>
+
+</p><h3>Links</h3><p>
+
+<a href="http://www.daide.org.uk/index.xml">The DAIDE Central Website</a></p><p>
+
+</p></body></html>

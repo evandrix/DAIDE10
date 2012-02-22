@@ -1,0 +1,8 @@
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\ResolveAssemblyReference.cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\Polarsoft.Diplomacy.AI.Properties.Resources.resources
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\Watcher.csproj.GenerateResource.Cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\Polarsoft.Diplomacy.AI.Main.resources
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\build\Release\Watcher.exe
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\build\Release\Watcher.pdb
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\Watcher.exe
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HeadlessHoldBot\obj\Release\Watcher.pdb

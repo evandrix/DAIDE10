@@ -1,0 +1,10 @@
+How To Enter Remove Orders
+
+All orders are entered by clicking on the map.
+
+- To enter a remove order, click on the unit you want to remove
+
+- To cancel a remove order, click on the order in the orders list, and then
+click the Cancel Order button.
+
+When you are done, hit the Submit Button to send your orders to the Server.

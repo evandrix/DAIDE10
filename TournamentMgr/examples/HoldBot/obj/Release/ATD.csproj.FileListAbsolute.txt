@@ -1,0 +1,8 @@
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\build\Release\AutomatedTournamentDirector.exe
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\build\Release\AutomatedTournamentDirector.pdb
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\ResolveAssemblyReference.cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\Polarsoft.Diplomacy.AI.Main.resources
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\Polarsoft.Diplomacy.AI.Properties.Resources.resources
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\ATD.csproj.GenerateResource.Cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\AutomatedTournamentDirector.exe
+E:\Applications\DAIDE\TournamentMan\sdk\src\examples\HoldBot\obj\Release\AutomatedTournamentDirector.pdb

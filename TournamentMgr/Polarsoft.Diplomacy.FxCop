@@ -1,0 +1,2679 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FxCopProject Version="1.35" Name="My FxCop Project">
+ <ProjectOptions>
+  <SharedProject>True</SharedProject>
+  <Stylesheet Apply="False">http://www.gotdotnet.com/team/fxcop//xsl/1.35/FxCopReport.xsl</Stylesheet>
+  <SaveMessages>
+   <Project Status="Active, Excluded" NewOnly="False" />
+   <Report Status="Active" NewOnly="False" />
+  </SaveMessages>
+  <ProjectFile Compress="True" DefaultTargetCheck="True" DefaultRuleCheck="True" SaveByRuleGroup="" Deterministic="True" />
+  <EnableMultithreadedLoad>True</EnableMultithreadedLoad>
+  <EnableMultithreadedAnalysis>True</EnableMultithreadedAnalysis>
+  <SourceLookup>True</SourceLookup>
+  <AnalysisExceptionsThreshold>10</AnalysisExceptionsThreshold>
+  <RuleExceptionsThreshold>1</RuleExceptionsThreshold>
+  <Spelling Locale="en-us" />
+  <VersionAware>False</VersionAware>
+  <OverrideRuleVisibilities>False</OverrideRuleVisibilities>
+  <CustomDictionaries SearchFxCopDir="True" SearchUserProfile="True" SearchProjectDir="True" />
+  <SearchGlobalAssemblyCache>False</SearchGlobalAssemblyCache>
+  <DeadlockDetectionTimeout>120</DeadlockDetectionTimeout>
+ </ProjectOptions>
+ <Targets>
+  <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Diplomacy.Daide.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Diplomacy.dll" Analyze="True" AnalyzeAllChildren="True" />
+  <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Utilities.dll" Analyze="True" AnalyzeAllChildren="True" />
+ </Targets>
+ <Rules>
+  <RuleFiles>
+   <RuleFile Name="$(FxCopDir)\Rules\DesignRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\GlobalizationRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\InteroperabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\MobilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\NamingRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PerformanceRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\PortabilityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\SecurityRules.dll" Enabled="True" AllRulesEnabled="True" />
+   <RuleFile Name="$(FxCopDir)\Rules\UsageRules.dll" Enabled="True" AllRulesEnabled="True" />
+  </RuleFiles>
+  <Groups />
+  <Settings />
+ </Rules>
+ <FxCopReport Version="1.35">
+  <Targets>
+   <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Diplomacy.Daide.dll">
+    <Modules>
+     <Module Name="polarsoft.diplomacy.daide.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Created="2006-06-14 19:27:29Z">
+        <Issue>
+         <Item>Polarsoft.Diplomacy.Daide</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2006-06-14 19:27:29Z">
+        <Issue Name="NoStrongName">
+         <Item>Polarsoft.Diplomacy.Daide</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="Polarsoft.Diplomacy.Daide">
+        <Types>
+         <Type Name="BaseBot">
+          <Members>
+           <Member Name="ProcessNOT_CCD(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage,System.Boolean):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessNOT_CCD</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessNOT_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessNOT_TME</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessNOT_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessNOT_Unexpected</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_ADM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_ADM</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_DRW</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_GOF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_HLO(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_HLO</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_HST(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_HST</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_IAM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_IAM</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_NME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_NME</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_NOT_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_NOT_DRW</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_NOT_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_NOT_GOF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_NOT_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_NOT_Unexpected</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_NOW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_NOW</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_ORD(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_ORD</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_SCO(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_SCO</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_SND(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_SND</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_SUB(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_SUB</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_TME</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessREJ_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessREJ_Unexpected</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_DRW(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_DRW</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_GOF(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_GOF</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_IAM(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_IAM</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_NME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_NME</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_NOT(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_NOT</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_OBS(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_OBS</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_SND(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_SND</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_TME(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_TME</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ProcessYES_Unexpected(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):System.Void">
+            <Messages>
+             <Message Id="Member" TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707" Created="2006-06-14 19:27:29Z">
+              <Issue Name="Member">
+               <Item>ProcessYES_Unexpected</Item>
+              </Issue>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Token">
+          <Members>
+           <Member Name="ADM">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ADM</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ALY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ALY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="AND">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.AND</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="AOA">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.AOA</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ARMY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ARMY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="AUT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.AUT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="BCC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.BCC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="BLD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.BLD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="BNC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.BNC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="BTL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.BTL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="BWX">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.BWX</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CCD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CCD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CHO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CHO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CloseBracket">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-21 20:25:45Z">
+              <Issue>
+               <Item>Token.CloseBracket</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="6" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CST">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CST</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CTO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CTO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CUT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CUT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="CVY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.CVY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="DMZ">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.DMZ</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="DRW">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.DRW</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="DSB">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.DSB</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="DSD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.DSD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="DSR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.DSR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ECS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ECS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ELS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ELS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ERR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ERR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ESC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ESC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="EXP">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.EXP</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FAL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FAL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FAR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FAR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FCT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FCT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FLEET">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FLEET</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FOR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FOR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FRM">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FRM</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="FWD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.FWD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="GOF">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.GOF</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HLD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HLD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HLO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HLO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HOW">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HOW</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HSC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HSC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HST">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HST</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="HUH">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.HUH</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="IAM">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.IAM</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="IDK">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.IDK</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="IFF">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.IFF</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="INS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.INS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="LOD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.LOD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="LVL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.LVL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MAP">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MAP</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MBV">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MBV</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MDF">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MDF</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MIS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MIS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MRT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MRT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MTL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MTL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="MTO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.MTO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NAS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NAS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NCS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NCS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NEC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NEC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NMB">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NMB</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NME">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NME</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NMR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NMR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NOT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NOT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NOW">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NOW</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NPB">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NPB</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NPR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NPR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NRN">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NRN</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NRS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NRS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSA">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSA</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSF">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSF</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSP">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSP</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NSU">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NSU</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NWC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NWC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NVR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NVR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="NYU">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.NYU</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="OBS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.OBS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="OCC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.OCC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="OFF">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.OFF</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_BitwiseAnd(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.Token):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="OperatorOverloadsHaveNamedAlternates" Category="Microsoft.Usage" CheckId="CA2225" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>BitwiseAnd</Item>
+               <Item>Token.op_BitwiseAnd(Token, Token):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'left'</Item>
+               <Item>Token.op_BitwiseAnd(Token, Token):TokenMessage</Item>
+              </Issue>
+              <Issue>
+               <Item>'right'</Item>
+               <Item>Token.op_BitwiseAnd(Token, Token):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="OpenBracket">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-21 20:25:45Z">
+              <Issue>
+               <Item>Token.OpenBracket</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="6" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ORD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ORD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="ORR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.ORR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="OUT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.OUT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="PCE">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.PCE</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="PDA">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.PDA</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="POB">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.POB</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="PRN">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.PRN</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="PRP">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.PRP</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="PTL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.PTL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="QRY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.QRY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="REJ">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.REJ</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="REM">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.REM</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="RET">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.RET</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="RTL">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.RTL</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="RTO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.RTO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SCD">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SCD</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SCO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SCO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SCS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SCS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SEC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SEC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SLO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SLO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SMR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SMR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SND">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SND</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SPR">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SPR</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SRY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SRY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SUB">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SUB</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SUC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SUC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SUG">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SUG</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SUM">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SUM</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SUP">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SUP</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SVE">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SVE</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="SWS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.SWS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="THK">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.THK</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="THN">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.THN</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="THX">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.THX</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="TME">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.TME</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="TRY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.TRY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="UNO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.UNO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="UNT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.UNT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="WCS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.WCS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="WHT">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.WHT</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="WHY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.WHY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="VIA">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.VIA</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="WIN">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.WIN</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="VSS">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.VSS</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="WVE">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.WVE</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="XDO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.XDO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="XOY">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.XOY</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="YDO">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.YDO</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="YES">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.YES</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="YSC">
+            <Messages>
+             <Message TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Token.YSC</Item>
+               <Item>Polarsoft.Diplomacy.Daide.Token</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="0" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TokenFactory">
+          <Members>
+           <Member Name=".cctor()">
+            <Messages>
+             <Message TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>Polarsoft.Diplomacy.Daide.TokenFactory</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="4" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TokenMessage">
+          <Members>
+           <Member Name="op_Addition(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.TokenMessage):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'left'</Item>
+               <Item>TokenMessage.op_Addition(Token, TokenMessage):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_Addition(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.Token):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'right'</Item>
+               <Item>TokenMessage.op_Addition(TokenMessage, Token):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_BitwiseAnd(Polarsoft.Diplomacy.Daide.Token,Polarsoft.Diplomacy.Daide.TokenMessage):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="OperatorOverloadsHaveNamedAlternates" Category="Microsoft.Usage" CheckId="CA2225" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>BitwiseAnd</Item>
+               <Item>TokenMessage.op_BitwiseAnd(Token, TokenMessage):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'left'</Item>
+               <Item>TokenMessage.op_BitwiseAnd(Token, TokenMessage):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_BitwiseAnd(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.Token):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="OperatorOverloadsHaveNamedAlternates" Category="Microsoft.Usage" CheckId="CA2225" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>BitwiseAnd</Item>
+               <Item>TokenMessage.op_BitwiseAnd(TokenMessage, Token):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'right'</Item>
+               <Item>TokenMessage.op_BitwiseAnd(TokenMessage, Token):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_BitwiseAnd(Polarsoft.Diplomacy.Daide.TokenMessage,Polarsoft.Diplomacy.Daide.TokenMessage):Polarsoft.Diplomacy.Daide.TokenMessage">
+            <Messages>
+             <Message TypeName="OperatorOverloadsHaveNamedAlternates" Category="Microsoft.Usage" CheckId="CA2225" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>BitwiseAnd</Item>
+               <Item>TokenMessage.op_BitwiseAnd(TokenMessage, TokenMessage):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="3" />
+               </User>
+              </Notes>
+             </Message>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'right'</Item>
+               <Item>TokenMessage.op_BitwiseAnd(TokenMessage, TokenMessage):TokenMessage</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="TokenType">
+          <Messages>
+           <Message TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008" Status="Excluded" Created="2006-06-14 19:27:29Z" FixCategory="NonBreaking">
+            <Issue Name="NotFlagsNoZeroValue">
+             <Item>TokenType</Item>
+            </Issue>
+            <Notes>
+             <User Name="Fredrik">
+              <Note Id="5" />
+             </User>
+            </Notes>
+           </Message>
+           <Message TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028" Status="Excluded" Created="2006-06-14 19:27:29Z">
+            <Issue Name="NotInt32">
+             <Item>Polarsoft.Diplomacy.Daide.TokenType</Item>
+             <Item>System.Byte</Item>
+            </Issue>
+            <Notes>
+             <User Name="Fredrik">
+              <Note Id="5" />
+             </User>
+            </Notes>
+           </Message>
+          </Messages>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Diplomacy.dll">
+    <Modules>
+     <Module Name="polarsoft.diplomacy.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Created="2006-06-14 19:27:29Z">
+        <Issue>
+         <Item>Polarsoft.Diplomacy</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2006-06-14 19:27:29Z">
+        <Issue Name="NoStrongName">
+         <Item>Polarsoft.Diplomacy</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="Polarsoft.Diplomacy">
+        <Types>
+         <Type Name="Location">
+          <Members>
+           <Member Name=".ctor(Polarsoft.Diplomacy.Province,Polarsoft.Diplomacy.UnitType)">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'province'</Item>
+               <Item>Location.Location(Province, UnitType)</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name=".ctor(Polarsoft.Diplomacy.Province,Polarsoft.Diplomacy.UnitType,Polarsoft.Diplomacy.Coast)">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'province'</Item>
+               <Item>Location.Location(Province, UnitType, Coast)</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Route">
+          <Members>
+           <Member Name=".ctor(Polarsoft.Diplomacy.Route)">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'route'</Item>
+               <Item>Route.Route(Route)</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+         <Type Name="Turn">
+          <Members>
+           <Member Name="op_GreaterThan(Polarsoft.Diplomacy.Turn,Polarsoft.Diplomacy.Turn):System.Boolean">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'left'</Item>
+               <Item>Turn.op_GreaterThan(Turn, Turn):Boolean</Item>
+              </Issue>
+              <Issue>
+               <Item>'right'</Item>
+               <Item>Turn.op_GreaterThan(Turn, Turn):Boolean</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+           <Member Name="op_LessThan(Polarsoft.Diplomacy.Turn,Polarsoft.Diplomacy.Turn):System.Boolean">
+            <Messages>
+             <Message TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062" Status="Excluded" Created="2006-06-14 19:27:29Z">
+              <Issue>
+               <Item>'left'</Item>
+               <Item>Turn.op_LessThan(Turn, Turn):Boolean</Item>
+              </Issue>
+              <Issue>
+               <Item>'right'</Item>
+               <Item>Turn.op_LessThan(Turn, Turn):Boolean</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="2" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+   <Target Name="$(ProjectDir)/build/Debug/Polarsoft.Utilities.dll">
+    <Modules>
+     <Module Name="polarsoft.utilities.dll">
+      <Messages>
+       <Message TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209" Created="2006-06-21 20:12:05Z">
+        <Issue>
+         <Item>Polarsoft.Utilities</Item>
+        </Issue>
+       </Message>
+       <Message TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210" Created="2006-06-21 20:12:05Z">
+        <Issue Name="NoStrongName">
+         <Item>Polarsoft.Utilities</Item>
+        </Issue>
+       </Message>
+      </Messages>
+      <Namespaces>
+       <Namespace Name="Polarsoft.Utilities">
+        <Types>
+         <Type Name="Localization">
+          <Members>
+           <Member Name="Format(System.String,System.Object[]):System.String">
+            <Messages>
+             <Message Id="0#" TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719" Status="Excluded" Created="2006-06-21 20:13:57Z">
+              <Issue>
+               <Item>format</Item>
+              </Issue>
+              <Notes>
+               <User Name="Fredrik">
+                <Note Id="1" />
+               </User>
+              </Notes>
+             </Message>
+            </Messages>
+           </Member>
+          </Members>
+         </Type>
+        </Types>
+       </Namespace>
+      </Namespaces>
+     </Module>
+    </Modules>
+   </Target>
+  </Targets>
+  <Notes>
+   <User Name="Fredrik">
+    <Note Id="0" Modified="2006-06-14 19:28:25Z">Polarsoft.Diplomacy.Daide.Token is immutable.</Note>
+    <Note Id="1" Modified="2006-06-21 20:14:36Z">Format is sent to underlying method, that has the same parameter name.</Note>
+    <Note Id="2" Modified="2006-06-21 20:22:36Z">Validated using Robustness</Note>
+    <Note Id="3" Modified="2006-06-21 20:23:47Z">Bitwise and should not have a corresponding method named Bitwise and.</Note>
+    <Note Id="4" Modified="2006-06-21 20:24:17Z">Static constructor needed.</Note>
+    <Note Id="5" Modified="2006-06-21 20:24:56Z">Designed to match values in the protocol document.</Note>
+    <Note Id="6" Modified="2006-06-21 20:26:13Z">Polarsoft.Diplomacy.Daide.Token is immutable.</Note>
+   </User>
+  </Notes>
+  <Rules>
+   <Rule TypeName="AssembliesShouldDeclareMinimumSecurity" Category="Microsoft.Usage" CheckId="CA2209">
+    <Resolution Name="Default">No valid permission requests were found for assembly '{0}'. You should always specify the minimum security permissions using SecurityAction.RequestMinimum.</Resolution>
+   </Rule>
+   <Rule TypeName="AssembliesShouldHaveValidStrongNames" Category="Microsoft.Design" CheckId="CA2210">
+    <Resolution Name="NoStrongName">Sign '{0}' with a strong name key.</Resolution>
+   </Rule>
+   <Rule TypeName="DoNotDeclareReadOnlyMutableReferenceTypes" Category="Microsoft.Security" CheckId="CA2104">
+    <Resolution Name="Default">Remove the readonly declaration from '{0}' or change the field to one that is an immutable reference type. If the reference type '{1}' is, in fact, immutable, exclude this message.</Resolution>
+   </Rule>
+   <Rule TypeName="EnumsShouldHaveZeroValue" Category="Microsoft.Design" CheckId="CA1008">
+    <Resolution Name="NotFlagsNoZeroValue">Add a member to '{0}' that has a value of zero with a suggested name of 'None'.</Resolution>
+   </Rule>
+   <Rule TypeName="EnumStorageShouldBeInt32" Category="Microsoft.Design" CheckId="CA1028">
+    <Resolution Name="NotInt32">If possible, make the underlying type of '{0}' System.Int32 instead of {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="IdentifiersShouldNotContainUnderscores" Category="Microsoft.Naming" CheckId="CA1707">
+    <Resolution Name="Member">Remove all underscores from member '{0}'.</Resolution>
+   </Rule>
+   <Rule TypeName="InitializeReferenceTypeStaticFieldsInline" Category="Microsoft.Performance" CheckId="CA1810">
+    <Resolution Name="Default">Initialize all static fields in {0} when those fields are declared and remove the explicit static constructor.</Resolution>
+   </Rule>
+   <Rule TypeName="OperatorOverloadsHaveNamedAlternates" Category="Microsoft.Usage" CheckId="CA2225">
+    <Resolution Name="Default">Provide a method named '{0}' as a friendly alternate for operator {1}.</Resolution>
+   </Rule>
+   <Rule TypeName="ParameterNamesShouldNotMatchMemberNames" Category="Microsoft.Naming" CheckId="CA1719">
+    <Resolution Name="Default">Change either member or parameter name '{0}' so that one differs from the other.</Resolution>
+   </Rule>
+   <Rule TypeName="ValidateArgumentsOfPublicMethods" Category="Microsoft.Design" CheckId="CA1062">
+    <Resolution Name="Default">Validate parameter {0} passed to externally visible method {1}.</Resolution>
+   </Rule>
+  </Rules>
+ </FxCopReport>
+</FxCopProject>

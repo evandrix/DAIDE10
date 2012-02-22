@@ -1,0 +1,1 @@
+REJ( SUB() ) message received : REJ ( SUB ( ( TUR AMY ANK ) BLD ) ( ( TUR AMY SMY ) BLD ) ) 

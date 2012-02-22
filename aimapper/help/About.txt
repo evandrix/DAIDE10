@@ -1,0 +1,12 @@
+About the DAIDE Mapper
+
+The DAIDE Mapper.
+
+(c) 2003-2009 David Norman.
+
+david@ellought.demon.co.uk
+
+Low Level Comms code developed by Andrew Rose.
+
+Addditional Map views added by Jason van Hal
+

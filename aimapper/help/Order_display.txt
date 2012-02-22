@@ -1,0 +1,29 @@
+Display Key
+
+Units and Centres are displayed on the map using the following symbols :
+
+Army : Solid Circle
+Fleet : Hollow Circle
+Dislodged Army : Solid Square
+Dislodged Fleet : Hollow Square
+
+Unowned Supply Centre : Hollow Dot
+Owned Supply Centre : Solid Dot
+
+Orders are displayed on the map using the following symbols :
+
+Hold : Circle around the unit
+Move : Arrow to move destination
+Support to hold : Line to circle around the supported unit
+Support to move : Line to circle on middle of movement arrow
+Move by convoy : Move arrow stepping through each convoying fleet
+
+Retreat : Arrow to retreat destination with square arrowhead
+Disband : Cross through unit
+
+Build Army : Solid Plus
+Build Fleet : Hollow Plus
+Removal : Cross through unit
+
+Failed order : Dotted line/Hollow Arrowhead
+Void order : Diagonal line through unit

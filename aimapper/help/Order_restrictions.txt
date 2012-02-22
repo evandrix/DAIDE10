@@ -1,0 +1,11 @@
+Order Restrictions
+
+The DAIDE Server is a lot more restrictive about the orders which it will
+accept than the Judges. It is designed on the basis that it will not accept
+any order which, irrespective of the other orders entered, will be marked
+as void. The major effects of this are :
+
+- A fleet can't convoy a unit to a province it can't get to.
+- A fleet can't convoy a unit if it is not at sea.
+- A support can not be given to a province a unit cannot get to.
+- Switzerland does not exist.

@@ -1,0 +1,493 @@
+67 394 gm
+105 394 lin
+115 404 lin
+128 404 lin
+138 401 lin
+185 437 lin
+208 431 lin
+227 417 lin
+228 410 lin
+226 404 lin
+227 390 lin
+241 383 lin % N Bdr Tou
+255 387 lin
+261 384 lin
+272 391 lin
+287 391 lin
+299 378 lin
+304 377 lin
+347 382 lin
+
+15 15 gm
+15 461 lin
+347 461 lin
+347 309 lin
+336 305 lin
+338 299 lin
+324 295 lin
+310 266 lin
+310 224 lin
+295 192 lin
+295 173 lin
+286 170 lin
+286 15 lin
+15 15 lin
+
+% West Border Nth Sea
+100 15 gm
+101 62 lin
+
+% South Border Nth Sea
+286 112 gm
+205 139 lin
+170 160 lin
+161 148 lin
+152 145 lin % SE Bdr Num
+145 130 lin % SE Bdr Sco
+126 116 lin
+117 117 lin
+117 113 lin
+126 112 lin
+123 106 lin
+140 86 lin
+138 80 lin
+113 78 lin
+100 84 lin
+95 79 lin
+104 76 lin
+98 73 lin
+115 65 lin
+117 60 lin
+84 64 lin % No Brd Sco
+76 70 lin
+79 74 lin
+71 79 lin
+70 87 lin
+75 85 lin
+74 90 lin
+69 100 lin
+63 101 lin
+72 105 lin
+77 102 lin
+73 115 lin
+75 120 lin
+70 131 lin
+73 130 lin
+81 116 lin
+85 116 lin
+88 115 lin
+86 122 lin
+90 127 lin
+84 138 lin
+81 139 lin
+84 145 lin
+87 140 lin
+93 144 lin
+97 140 lin
+114 138 lin % SW Bdr Sco
+111 142 lin
+108 148 lin
+114 158 lin
+122 154 lin
+119 162 lin
+121 162 lin
+119 168 lin
+121 168 lin
+117 173 lin % NE Bdr Wal
+106 172 lin
+90 185 lin
+99 182 lin
+100 188 lin
+102 189 lin
+99 197 lin
+80 205 lin % S Bdr Iri
+82 210 lin
+93 208 lin
+100 212 lin
+104 209 lin
+113 215 lin
+126 206 lin % S Bdr Wal
+119 218 lin
+100 219 lin
+74 244 lin
+82 244 lin % W Bdr ECh
+91 237 lin
+108 239 lin
+112 230 lin
+128 231 lin
+149 228 lin
+148 224 lin % W Bdr Lon
+157 226 lin % E Bdr ECh
+181 226 lin
+201 218 lin
+198 216 lin
+184 215 lin
+184 211 lin % SE Bdr Ang
+187 211 lin
+186 206 lin
+194 208 lin
+193 203 lin
+199 201 lin
+202 193 lin % S Bdr Was
+197 182 lin
+181 183 lin
+177 185 lin
+172 185 lin
+178 175 lin
+166 167 lin
+167 163 lin
+174 165 lin
+173 162 lin
+170 160 lin
+
+% Pale
+15 132 gm
+20 124 lin
+24 128 lin
+28 129 lin
+30 120 lin
+32 123 lin
+37 123 lin
+38 122 lin
+42 121 lin
+42 120 lin
+43 120 lin
+44 121 lin
+46 121 lin
+48 123 lin
+52 122 lin
+52 124 lin
+50 129 lin
+50 130 lin
+51 129 lin
+52 131 lin
+52 133 lin
+54 140 lin
+54 139 lin
+55 139 lin
+56 142 lin % okay to here
+55 144 lin
+51 146 lin
+49 148 lin
+49 149 lin
+53 147 lin
+57 147 lin % top of downward arm
+58 155 lin
+56 158 lin
+55 157 lin
+56 156 lin
+56 153 lin
+54 149 lin
+53 150 lin
+54 151 lin
+54 156 lin
+53 156 lin
+53 157 lin
+54 157 lin
+55 160 lin
+52 163 lin
+48 163 lin
+47 166 lin
+44 167 lin
+43 166 lin
+43 162 lin
+41 162 lin
+41 163 lin
+39 163 lin
+39 164 lin
+36 164 lin
+36 161 lin
+35 160 lin
+36 159 lin
+33 156 lin
+30 159 lin
+30 160 lin
+31 161 lin
+31 163 lin
+30 163 lin
+30 165 lin
+25 170 lin
+15 165 lin
+
+114 138 gm
+145 130 lin
+
+58 155 gm
+81 140 lin
+
+% Internal Eng Bdrs
+152 145 gm
+136 194 lin
+141 200 lin
+148 224 lin
+
+136 194 gm
+121 195 lin
+
+117 173 gm
+126 183 lin
+121 195 lin
+126 206 lin
+
+141 200 gm
+169 204 lin
+184 211 lin
+
+
+% N Bristol border
+32 167 gm
+80 205 lin
+
+% N Bis Eur E Coast
+50 272 gm
+87 275 lin
+95 275 lin
+96 279 lin
+99 282 lin
+96 284 lin
+99 289 lin
+106 289 lin
+119 294 lin
+130 295 lin
+131 302 lin
+137 303 lin
+137 311 lin
+142 318 lin
+153 324 lin % SW Bdr Brt
+153 335 lin
+160 344 lin
+153 340 lin
+152 355 lin
+155 361 lin
+148 382 lin
+138 388 lin
+138 401 lin
+
+% N Brt Chan S Coast
+87 275 gm
+109 268 lin % W Bdr ECh
+125 265 lin
+145 268 lin
+140 252 lin
+150 251 lin
+150 255 lin
+154 257 lin
+172 257 lin % E Bdr ECh
+181 255 lin
+176 254 lin
+178 249 lin
+200 242 lin % E Bdr Nmd
+203 226 lin
+220 220 lin % E Bdr Nmd
+236 214 lin
+243 214 lin % W Bdr Ant
+240 213 lin
+254 206 lin
+245 204 lin
+244 201 lin
+251 195 lin % S Bdr Was
+256 182 lin
+262 184 lin
+259 187 lin
+260 192 lin
+266 192 lin
+265 189 lin
+269 186 lin % E Bdr Ams
+265 178 lin
+267 173 lin
+286 170 lin
+
+% W Bdr ECh
+109 268 gm
+82 244 lin
+
+% E Bdr ECh
+172 257 gm
+157 226 lin
+
+% S Bdr Was
+251 195 gm
+202 193 lin
+
+% Brit Bdr
+153 324 gm % SW Bdr Brt
+167 321 lin
+184 315 lin
+188 293 lin
+180 293 lin
+172 277 lin
+149 274 lin
+145 268 lin
+
+%Anjou
+172 279 gm
+163 281 lin
+160 284 lin
+155 287 lin
+155 295 lin
+160 300 lin
+165 305 lin
+167 307 lin
+185 308 lin
+
+% Normandy
+188 293 gm
+195 292 lin % orl/par
+193 275 lin
+205 259 lin %cal/par
+200 242 lin
+
+% Paris
+195 292 gm
+215 280 lin
+230 290 lin
+234 310 lin
+247 320 lin % dau/orl
+253 311 lin
+245 305 lin
+247 295 lin
+256 280 lin
+227 252 lin
+205 259 lin
+
+% Charolais
+256 280 gm
+271 290 lin
+273 303 lin
+262 318 lin
+
+% Calais
+227 252 gm
+245 244 lin % dij
+241 235 lin
+230 234 lin
+226 228 lin
+220 227 lin
+220 220 lin
+
+% Orleanais
+247 320 gm % dau/orl
+244 330 lin % dau/lim
+202 331 lin
+184 315 lin
+
+% Aquitaine
+167 321 gm
+174 354 lin
+188 364 lin
+186 376 lin % Tou
+187 399 lin % Ara
+178 403 lin
+138 388 lin
+
+% Poitou
+186 376 gm
+205 365 lin
+202 331 lin
+
+% Aragon
+187 399 gm
+199 407 lin
+228 410 lin
+
+% Toulouse
+205 365 gm
+230 375 lin
+243 383 lin
+
+% Dauphine
+244 330 gm
+236 353 lin
+230 375 lin
+
+% Dauphine S
+236 353 gm
+255 363 lin
+293 345 lin
+292 331 lin % sav/can
+288 322 lin
+283 320 lin
+277 324 lin % can/dij
+272 326 lin
+253 311 lin % dij/par
+
+% Provence
+293 345 gm
+289 352 lin
+292 352 lin
+292 361 lin
+296 369 lin
+304 368 lin
+304 377 lin
+
+% Savoy
+292 331 gm
+311 327 lin
+315 320 lin
+319 321 lin
+327 330 lin
+334 320 lin
+347 322 lin
+
+% Dijon SE
+277 324 gm
+274 319 lin
+293 297 lin % lor/can
+277 285 lin
+289 260 lin % dij/lor/lux
+310 266 lin
+
+% Cantons/Lorraine
+293 297 gm
+324 295 lin
+
+% Alsace
+315 276 gm
+347 250 lin
+347 309 lin
+
+% Dijon N
+245 244 gm
+257 242 lin % lux/fla
+260 248 lin
+283 252 lin
+289 260 lin
+
+% Flanders
+257 242 gm
+269 226 lin
+268 216 lin
+255 212 lin
+243 214 lin
+
+% Holland
+269 226 gm
+285 205 lin
+280 189 lin
+269 186 lin
+
+% Friesland/Luxembourg
+285 205 gm
+295 192 lin
+
+% Castile W
+67 394 gm
+65 408 lin
+54 421 lin
+50 429 lin
+50 450 lin
+184 450 lin
+185 437 lin
+
+% Atlantic/Med border
+50 450 gm
+50 461 lin
+
+% Atlantic
+50 437 gm
+50 180 lin
+
+
+%Dij/Cha border for 1410 map
+%277 285 gm
+%256 280 lin

@@ -1,0 +1,6 @@
+sco (Arg Bai Mdp Sfe)
+    (Bra Cui Frt Rdj)
+    (Chl Ant Con San)
+    (Col Bar Bog Med)
+    (Per Are Chi Lim)
+    (UNO Bbd Crc Cri Ecu Guy Jua Lap Mal Mrc Pot Prg Scr Uru)

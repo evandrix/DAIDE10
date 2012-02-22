@@ -1,0 +1,5 @@
+H:\$diplomacy\TournamentMgr\examples\ConsBot\obj\Debug\ResolveAssemblyReference.cache
+H:\$diplomacy\TournamentMgr\examples\ConsBot\obj\Debug\Polarsoft.Diplomacy.AI.Main.resources
+H:\$diplomacy\TournamentMgr\examples\ConsBot\obj\Debug\Polarsoft.Diplomacy.AI.Properties.Resources.resources
+H:\$diplomacy\TournamentMgr\examples\ConsBot\obj\Debug\GenerateResource-ResGen.read.1.tlog
+H:\$diplomacy\TournamentMgr\examples\ConsBot\obj\Debug\GenerateResource-ResGen.write.1.tlog

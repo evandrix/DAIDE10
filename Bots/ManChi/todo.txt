@@ -1,0 +1,80 @@
+Man'chi Diplomacy AI -- TODO
+Copyright 2002-2003 Brian Roberts (brian@mirror.org)
+
+This is a medium term TODO list.  Short term bugs, kludges, etc are 
+commented within the source code (search for "TODO").  Long term
+dreams are still in my head.  This document is intended to cover the
+"doable but requires design and a bunch of work" tasks, especially
+those that I've seen generate bad moves.
+
+Retreat Bounces (tactical)
+Scoring of retreats does not handle bouncing with foreign units.
+Should compare scores from forced disband of both units(?).  Need
+to consider rebuild options as well?
+
+Convoy Success Rates (tactical)
+Is not aware that dislodging of a convoying fleet will present the
+convoy.  Probably should be creating a ChainedResult to lower the
+success rate if necessary.
+
+Cutting Support (tactical)
+Currently has minor uncuttable support and moves to cut support
+calculations.  Doesn't really get the concept, and will make a move
+listed a "to cut support" when it doesn't do the corresponding 
+attack.  Choices:
+(a) Score calculations look for cut/uncuttable supports based on
+existing moves.  Requires re-scoring existing decisions based on newly
+added cuts.
+(b) Add cuts as "assisting" units to possible moves (like supports are
+handled now).  Makes it easier to manage and score an attack/defence
+that involves cuts from the side.   Much easier to understand why
+an attack would succeed/whatever.  Lots of ugly work.
+(c) Ignore cuts & supports in initial move generation, then adjudicate
+against foreign sets of orders to see what works.  This would make it
+harder to understand the "why" behind a set of moves.
+
+Peaceful Neighbours (operational)
+Does not distinguish between (a) trusted neighbours we don't need
+any defence against, (b) the normal peaceful neighbour we want to
+keep a token unit or two in the area for, and (c) untrusted but
+peaceful neighbours we want to hold a strong line against without
+attacking.
+
+Multiple Neighbours (probably strategic first)
+Most obvious cause of bad, too defensive play is treating all countries
+as equally hostile.  Eg, Germany in S1901M sees 4 "hostile" units 
+threatening Munich (Par, War, Vie, Ven).  This has been tentatively
+fixed by the alternate result calculations in SupportedHold/MoveScore
+that assume no cooperation, but its ugly.  Really need to work on
+the strategic level before this can be done properly.  Probably 
+should be aiming towards calculating the best/likely/worst cases for
+supports.
+
+Stopping Attacks (operational/tactical)
+In S1901M Austria doesn't see A Vie - Gal as useful as defending 
+from Russia -- misses the benefit of keeping Russia out of that
+province.  Probably should be calculating Russia's attack goals, 
+and adding them as negative goals to the evaluation -- ie, things
+that we want to prevent.  Have of the beginnings of goals & moves
+for different countries, but not complete.
+
+Unit Ratios (operational)
+England always builds fleets for the attack.  If an army exists, it
+sees the benefit of convoying to the mainland, but doesn't see that
+it should build one in the first place.  Similar issue: Turkey often
+builds fleets for initial capture of Sev/Rum/Bul/Gre, then builds
+armies for the longer range attacks -- but then has those armies
+trapped behind the fleets.
+
+Free Home Centers (operational)
+Often can't build because all home SCs are full.  Seems to happen
+to Germany and Austria because they feel threatened from all 
+directions, and occupy home centers in defence.
+
+Searcher Implementation (UI)
+Currently choice of searcher must be hardcoded.  Robot play uses
+simple total, situations use full + simple per unit.  Really should
+be parameter or controllable somehow.  Or default to full, but its
+memory usage is too high right now (retains all possible moves with
+full scoring details for all past phases).
+

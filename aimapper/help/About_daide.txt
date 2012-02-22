@@ -1,0 +1,18 @@
+About the DAIDE Project
+
+In the past, there have been a number of attempts to write Diplomacy AI's. 
+The AH Diplomacy Game, The DPP, The Hasbro Diplomacy Game, SeaNail, ... But 
+what has never been done before, is to attempt to set up an environment 
+where different Diplomacy AIs can play against each other. So in early 2002, 
+the "Diplomacy AI Development Environment" Project was started, to do 
+exactly that.
+
+The system consists of a server which runs the games, and a number of 
+clients, each of which is either a player or an observer in the game. The
+clients connect to the server via TCP/IP, using a specially designed
+protocol. This protocol includes all the communication requirements needed
+to run the game, submit orders and send results, and to send and receive
+press.
+
+If you are interested in Diplomacy AI Development, then join the DipAI
+mailing list. Send a message to dipai-subscribe@yahoogroups.com

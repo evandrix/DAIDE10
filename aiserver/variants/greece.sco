@@ -1,0 +1,8 @@
+sco (ath Att Boe Ere)
+    (kre Ioi Kos Kwe)
+    (maa Abd Kal Maz)
+    (spa Ard Arg Lac)
+    (ths Amb Dor The)
+    (del Les Spo Zyk)
+    (tra Lyd Mys Tro)
+    (UNO Aet Arc Arn Car Cyp Eli Epi Kor Pho Phy Rho Tho Thw)

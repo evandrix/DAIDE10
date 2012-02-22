@@ -1,0 +1,21 @@
+Recovering a game from a crashed server.
+
+To recover a crashed game, you need to go through the following steps :
+
+(1) Restart the AI Server.
+
+(2) In the setup dialog, select "load game".
+
+(3) Select to load a crashed game.
+
+(4) Select the name of the file to save the game as. The game is converted
+    into a saved game, and reloaded.
+
+(5) Reconnect all the Clients. The passcode for each power will be the same
+    as before the crash, and can be determined from the server in the 
+	normal way.
+
+(6) As soon as all powers have been reconnected, the game will proceed.
+
+Any problems with these instructions, please let me know.
+david@ellought.demon.co.uk

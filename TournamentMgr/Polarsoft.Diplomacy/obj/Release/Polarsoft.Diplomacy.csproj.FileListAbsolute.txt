@@ -1,0 +1,8 @@
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Diplomacy.xml
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Diplomacy.dll
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Diplomacy.pdb
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Diplomacy\obj\Release\ResolveAssemblyReference.cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Diplomacy\obj\Release\Polarsoft.Diplomacy.Properties.ErrorMessages.resources
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Diplomacy\obj\Release\Polarsoft.Diplomacy.csproj.GenerateResource.Cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Diplomacy\obj\Release\Polarsoft.Diplomacy.dll
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Diplomacy\obj\Release\Polarsoft.Diplomacy.pdb

@@ -1,0 +1,6 @@
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Utilities.xml
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Utilities.dll
+E:\Applications\DAIDE\TournamentMan\sdk\src\build\Release\Polarsoft.Utilities.pdb
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Utilities\obj\Release\ResolveAssemblyReference.cache
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Utilities\obj\Release\Polarsoft.Utilities.dll
+E:\Applications\DAIDE\TournamentMan\sdk\src\Polarsoft.Utilities\obj\Release\Polarsoft.Utilities.pdb

@@ -1,0 +1,148 @@
+PREAMBLE
+
+This preamble does not form part of the terms and conditions of the license.
+Where this preamble disagrees with any statement in the license, the license
+applies.  This preamble is intended to explain the purpose of the license.
+
+The license grants you the right to use this software for the development
+(designing, coding, testing) and execution of other software related to the
+board game Diplomacy (TM).
+
+Parts of this software (the dynamic-link libraries) can be redistributed by
+you with any software that you write that requires this software to run.  The
+rest of this software may not be redistributed.  You will never make any charge
+for anything that you produce that uses this software.  You will inform me of
+your use of this software and accredit me appropriately.
+
+I cannot be held liable by you or anybody to whom you distribute parts of this
+software for any claim, damages or other liability.
+
+
+TERMS AND CONDITIONS OF USE
+
+
+1) Definitions
+
+   LICENSE   - The entire contents of this document with the exception of the
+               preamble.
+
+   YOU, YOUR - An individual attempting to exercise rights under this LICENSE.
+
+   I, ME     - Andrew Rose, the author of this SOFTWARE.
+
+   SOFTWARE  - Any executable and data files which this license accompanies
+               along with any documentation.  Also, anything which is provided
+               as part of the same package.
+
+   PACKAGE   - The compressed archive file in which this SOFTWARE is
+               distributed.
+
+2) Acceptance
+
+   YOU have not signed this LICENSE and therefore YOU are not obliged to accept
+   it.  However, nothing else grants YOU permission to use the SOFTWARE and
+   therefore this is prohibited.  Therefore, by using the SOFTWARE, YOU accept
+   the terms of this LICENSE in full.
+
+   If any part of this LICENSE is held invalid or unenforcable under any
+   applicable circumstance then the entire LICENSE is invalid and YOU have no
+   permission to use the SOFTWARE.  Therefore, it is YOUR responsibility to
+   ensure that the entire LICENSE is valid and enforcable in the jurisdictions
+   under which YOU use the SOFTWARE.
+
+
+3) Copying
+
+   YOU may not copy the SOFTWARE execpt as expressly permitted in this section
+   of the LICENSE.
+
+3.1) Dynamic-link Libraries
+
+     YOU may distribute any dynamic-link libraries that are provided with this
+     SOFTWARE in accordance with the following restrictions.
+
+3.1.1) YOU distribute verbatim copies of the library.
+
+3.1.2) YOU do not give the library a name other than that which it already has.
+
+3.1.3) YOU distribute the libraries only with software that YOU have written
+       and that will not function without the libraries.
+
+3.1.4) YOU make no charge of any kind related to the distribution of YOUR
+       software.
+
+3.1.5) YOU display the notice described in 3.1.6 prominently in all following
+       locations.
+
+       - Any documentation (electronic, paper or other) that acompanies YOUR
+         sofware.
+
+       - Any sales or marketing material that mentions YOUR software.
+
+       - If YOUR program can be invoked from the command line and normally
+         displays output there then YOU must also cause the software to display
+         the notice there.
+
+       - If YOUR program displays information regarding the author, date of
+         production or a version number then YOU must also cause the software
+         to display the notice there.
+
+3.1.6) The notice shall read as follows.
+
+       "Portions of this software were developed by Andrew Rose."
+
+3.1.7) YOU do not permit the recipient of YOUR software to use the libraries
+       except as required for the correct operation of YOUR software and that
+       in no circumstances may the recipient of YOUR software copy, modify or
+       sub-license any part of this SOFTWARE.
+
+3.1.8) YOU shall make all reasonable efforts to inform ME that YOU are
+       distributing the libraries with YOUR software.
+
+3.1.9) YOU shall ensure that the disclaimer in this license is applicable to
+       the recipient of YOUR software and that YOU idemnify ME against all
+       claims arising from their use or misuse of the SOFTWARE.
+
+3.1.9.1) For this purpose, YOU may copy the discliamer in this LICENSE.
+
+3.2) Full Package
+
+     Alternatively, at YOUR option, YOU may distribute the full PACKAGE subject
+     to the following restrictions.
+
+3.2.1) The PACKAGE is the complete, unmodified PACKAGE.
+
+3.2.2) The PACKAGE is distributed for the purpose of allowing YOUR recipient to
+       build YOUR software for which part or all of the PACKAGE is required.
+
+
+4) Acceptable Use
+
+   YOU may use this SOFTWARE solely for the development, execution and
+   distribution of software directly related to the board game Diplomacy (TM).
+
+   YOU may not modify this SOFTWARE in any way.
+
+
+5) Disclaimer
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+   IN THE SOFTWARE.
+
+
+6) Termination
+
+   If YOU break any of the conditions in sections 3.1 or 4 of this LICENSE or
+   any of their sub-sections then all the rights granted to YOU by this LICENSE
+   shall be terminated.
+
+   YOU may terminate this LICENSE at any time by destroying all the copies of
+   the SOFTWARE that YOU facilitated, including, but not limited to, those in
+   YOUR possesion and those which YOU provided to others and all other copies
+   derived in any way from YOUR actions.
+

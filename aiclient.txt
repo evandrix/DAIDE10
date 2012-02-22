@@ -1,0 +1,192 @@
+> Confession: I truely do not have a clue what i'm doing with this client. :-)
+
+OK. I was hoping it would be a little obvious how it is intended to work from Holdbot. Obviously not...
+
+First thing. You need to know and understand the following standard C++ terms : Class, Object, Base Class and Derived Class, Virtual Function. You will also need to know how to use the Standard Template Library map, set and list templates. If you do not, then you need to understand these before going any further. Say if you don't, and I'll give you the basics so you can learn about them without having to read a whole book on C++ and OO programming.
+
+> basically i'm "expecting" to write myAI.cpp as e.g.:
+> 
+> #include cspdll_and_aiclient_stuff.h
+> #include my_own_stuff.h
+> 
+> void main(void) {
+> 
+> 	connect("myAI","1.0");
+> 	myMap=load_map(standard);
+> 	do{
+> 		read_messages_funcs;
+> 		send_press_funcs;
+> 		calc_moves_funcs;
+> 		submit_orders_funcs;
+> 	} while (game_not_over);
+> 	disconnect();
+> }
+
+No, it doesn't work like that. This is the point of the AiClient. Every Client needs this loop, so it is built into the AiClient.
+
+> and have 'myMap' available to play with, 
+
+Yes, that you do have.
+
+> and a list of server call functions to use. 
+
+There are a few - you can submit orders (via the MapAndUnits object), and there is send_message_to_server() available.
+
+> however, i suspect is not how this stuff is meant to be used :-)
+> I can't even figure out how to compile your holdbot with the aiclient!
+
+OK, first problem then. Getting it all to build.
+
+You should be able to build an Executable from the AiClient stuff without any modification at all. This Executable doesn't do much - it connects to the server as an observer, receives all the messages from it, stores the map and unit information as the server provides it (but then never uses it), and exits when an OFF message is received. Until you have this building, don't try and build the HoldBot.
+
+> But now i'm confused - where the heck does my own code go? "holdbot.cpp"? this only
+> contains two class functions - there's nothing that actually creates them, or even has
+> any hint of an AI structure (i mean like the above linear example) even when i trawl
+> through the code. do i write directly in any of the aiclient files?
+
+OK, I guess I need to explain what the various major classes do.
+
+There are a number of Token handling classes.
+
+Token : represents one token in the language. e.g. OFF, MAP, MDF, SCO, NOW, etc.
+
+TokenMessage : represents one message in the language. Contains a series of tokens. Contains functions to build and manipulate the messages. For instance, take the TokenMessage SUB ((ENG FLT BAR) MTO (STP NCS)) ((ENG FLT NWY) SUP (ENG FLT BAR) MTO STP).
+
+get_submessage(0) will return SUB
+get_submessage(1) will return (ENG FLT BAR) MTO (STP NCS)
+get_submessage(2) will return (ENG FLT NWY) SUP (ENG FLT BAR) MTO STP
+
+Basically a submessage is either (a) a Token, or (b) a TokenMessage inside a single set of brackets. And where there are nested brackets, you can use get_submessage() again to further decompose the message.
+
+The TokenMessage class is pretty powerful. It is worth playing with it to see what it can do.
+
+Then we have AiClientDlg. This is a class which represents the dialog box on the screen. For most Clients, this is pretty much unnecessary, except that it won't work without it. It does provide a Cancel button for if you want to kill your Client without killing the server.
+
+The map and units are represented by the MapAndUnits class. This contains complete details of the map topology, current unit positions, current supply centre ownership, etc. Everything that is contained in the MDF, NOW and SCO messages is stored here in an easy to access form.
+
+And finally, the heart of the system. BaseBot. This is the base class for all Bots. If you have a look at BaseBot.h, you will see that it contains a large number of functions. A lot of these are virtual, and do very little. When you want to write your AI, you derive from BaseBot, and override these functions to do what you want. Most notably, override the process_now_message function - this is called when a NOW message is received - to work out your next set of orders. All these functions are called by the AiClient framework when appropriate. You just have to tell it what to do when they are called. And if what BaseBot does is fine, you don't have to do anything.
+
+So, going back to your last question :
+
+> But now i'm confused - where the heck does my own code go? "holdbot.cpp"? this only
+> contains two class functions - there's nothing that actually creates them, or even has
+> any hint of an AI structure (i mean like the above linear example) even when i trawl
+> through the code. 
+
+The Holdbot.zip contains three files. The third one, Bot_Type.h is very important. This contains just two lines. The first includes the class header for your Bot class (the one you derive from BaseBot). The second defines the type BOT_TYPE as being your class.
+
+When the AiClient runs, it creates an object of type BOT_TYPE. Because this is defined as your Bot Type, it creates an object of your Bot. It then knows how to use it (because it is derived from BaseBot), and so calls all the functions at the appropriate time without you having to do anything else.
+
+If you look in the AiClient source, there is also a Bot_Type.h, which defines BOT_TYPE as BaseBot. This is why you can build the AiClient and run it, and it connects as an Observer, keeps an internal representation of the map and units, and responds to OFF. That is all done for you by BaseBot.
+
+So as you said :
+
+> "holdbot.cpp"? this only contains two class functions 
+
+Yes. And that is all you need for a HoldBot. Two things :
+
+(1) When it is time to send either NME or OBS, you have to send NME with your name and version.
+
+(2) When a NOW is received and the position has been updated, you have to work out and submit your next set of orders.
+
+These correspond directly to the two functions in HoldBot. And they are all you need for a HoldBot, because they are the only ways in which a HoldBot is unique - it's name, and how it orders its units.
+
+> do i write directly in any of the aiclient files?
+
+Only Bot_Type.h - as described above.
+
+> also (VCC problem) I can only get things to compile in VC++ if i dump them all into the
+> same directory so they can 'see' eachother. how do i get a completely seperate
+> directory/workspace 'myAI' containing only my own code but that still can access e.g.
+> cspdll and aiclient code? (plus i don't know how to unspecify the build paths on YOUR
+> machine to my machine!)
+
+OK, the paths to additional directories go in the Project Settings. Select Project -> Settings -> C/C++ -> Category=Preprocessor. Look at the Additional Include directories.
+
+Then go to Project -> Settings -> Link -> Category=Input. Look at the Object/Library Modules.
+
+> oh and where are the adjudicator function definitions (i can't see the wood for the
+> trees).
+
+Ah, that is one thing that isn't included. There is no adjudicator in the client at the moment (because the client doesn't do any adjudication...). I will be adding this to the client framework at a later date.
+
+There are also other things I intend to add, but I do not expect the current interface to BaseBot to change much, it will just be expanded.
+
+Have another look at it, and then tell me what still doesn't make sense...
+
+> I have just a few minor queries left now, and then i can go about miserably failing to
+> beat Shane's SmarterBot :-)
+
+Sure.
+
+> 1) I assume that it is only the virtual functions that i can overwrite? (is this what the 
+> virtual means - redfinition is possible?) 
+
+Exactly. The virtual keyword means that it can be redefined by a derived class. However, I think pretty every function you will need to derive from is virtual, so this shouldn't be a problem. An example of one of the few that isn't, is process_now(). This does all the processing of a NOW message that I want to do (i.e. update the MapAndUnits class), and then calls process_now_message() which is virtual, so you can do your stuff.
+
+If there is anything that you want to do but can't because I haven't made a function virtual, then shout out and I'll either (a) tell you how I expected you to do it, or (b) change the code so you can do it.
+
+> 2) So you forsee (potentially) the bulk of the work/coding taking place in
+> process_now_message as this signals the start of the new turn? (or at least for simple
+> bots).
+
+Yes - I expect this to be the case for all NoPress Bots. And that is why the messages were reordered so that the server always sends NOW last (i.e. after ORD, SCO, etc).
+
+> 3) possibly related to 2) but i think a general event driven coding question:
+>   suppose i'm hard number crunching in process_now_message and another message arrives
+> from the server - does the relevant function handle this immediately (and therefore
+> simultaneously executing both pieces of code), or does process_now_message execute first
+> and then incoming mail is handled? (i suspect the former)
+
+The latter. If you want the former, then you need to make process_now_message kick off a new thread, and then return. And if you do that, then I probably need to add Mutex protection to the MapAndUnits class.
+
+> 4) Oh, and i assume that incoming mail is 'fetched' for me (and then processed by the
+> relevant function) - i don;t get a 'new mail' flag and then have to get it myself.
+
+Exactly. You know a new message has arrived because the relevant function gets called.
+
+> > > 2) So you forsee (potentially) the bulk of the work/coding taking place in 
+> > > process_now_message as this signals the start of the new turn? (or at 
+> > >least for simple bots).
+> >
+> > Yes - I expect this to be the case for all NoPress Bots. And that is why 
+> > the messages were reordered so that the server always sends NOW last (i.e. 
+> > after ORD, SCO, etc).
+>
+> > >3) possibly related to 2) but i think a general event driven coding question:
+> > >    suppose i'm hard number crunching in process_now_message and another 
+> > > message arrives from the server - does the relevant function handle this 
+> > > immediately (and therefore simultaneously executing both pieces of code), 
+> > > or does process_now_message execute first and then incoming mail is 
+> > > handled? (i suspect the former)
+>
+> > The latter. If you want the former, then you need to make 
+> > process_now_message kick off a new thread, and then return. And if you do 
+> > that, then I probably need to add Mutex protection to the MapAndUnits class.
+> 
+> hmmm - ok then, well with respect to you answers to 2) and 3):
+> 
+> i was thinking of using pr-cess_now_message as a kind of main() (haha) and then say, call
+> my press negotiator (from within process_now_message); the results of which would then be
+> used to calculate my orders. but if the "press" functions cannot be called while (say)
+> process_now_message is still active, then how will my negotiator be able to send/recieve
+> press?
+> (how did you envision this working).
+
+You can send press at any point. Sending messages to the server will work while you are processing (just call the send_message_to_server function in BaseBot). But as you say, you won't get any press in while you are thinking about orders.
+
+How to deal with it, I'm not sure. There are a few options. One is to try and write the move calculating algorithm to be fast enough that you can run it, then handle any waiting press, then recalculate based on the new information. Otherwise even if you do have the calculation in a separate thread, you somehow need to tell your move calculator about changes in situation due to press received, in mid-calculation. And once you've worked out how you will be able to calculate moves in  a changing target environment, I suspect the handling of press will slot in nicely. But until you have an algorithm for this, how to code it does look very awkward.
+
+> oh, one thing i meant to ask - when i was using a 'dos' based program, i could dump
+> variables to screen by e.g. printf. is there something similar i can use in this case -
+> either to the screen, or to a logfile (error log is fine...)
+
+In errorlog.h, you will find log_error().
+
+> void set_build_order( COAST_ID location );
+> how come no unit type (AMY/FLT) specified?
+
+It just knows... :-).
+
+Check out the description of COAST_ID near the top of MapAndUnits.h . It explains how the coast_token member of COAST_ID works there.
+
